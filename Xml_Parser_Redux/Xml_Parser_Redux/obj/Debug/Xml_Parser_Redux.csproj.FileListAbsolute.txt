@@ -1,0 +1,8 @@
+c:\users\sfalconer\documents\visual studio 2015\Projects\Xml_Parser_Redux\Xml_Parser_Redux\bin\Debug\Xml_Parser_Redux.exe.config
+c:\users\sfalconer\documents\visual studio 2015\Projects\Xml_Parser_Redux\Xml_Parser_Redux\bin\Debug\Xml_Parser_Redux.exe
+c:\users\sfalconer\documents\visual studio 2015\Projects\Xml_Parser_Redux\Xml_Parser_Redux\bin\Debug\Xml_Parser_Redux.pdb
+c:\users\sfalconer\documents\visual studio 2015\Projects\Xml_Parser_Redux\Xml_Parser_Redux\obj\Debug\Xml_Parser_Redux.csprojResolveAssemblyReference.cache
+c:\users\sfalconer\documents\visual studio 2015\Projects\Xml_Parser_Redux\Xml_Parser_Redux\obj\Debug\Xml_Parser_Redux.exe
+c:\users\sfalconer\documents\visual studio 2015\Projects\Xml_Parser_Redux\Xml_Parser_Redux\obj\Debug\Xml_Parser_Redux.pdb
+c:\users\sfalconer\documents\visual studio 2015\Projects\Xml_Parser_Redux\Xml_Parser_Redux\bin\Debug\books.xml
+c:\users\sfalconer\documents\visual studio 2015\Projects\Xml_Parser_Redux\Xml_Parser_Redux\bin\Debug\FlightLogs.xml

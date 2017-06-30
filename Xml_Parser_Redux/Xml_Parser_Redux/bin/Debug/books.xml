@@ -1,0 +1,23 @@
+<books>
+  <book publisher="IDG books" on-loan="Sanjay">
+    <title>XML Bible</title>
+    <title>Mo' Books, Mo' Problems</title>
+    <author>Elliotte Rusty Harold</author>
+  </book>
+  <book publisher="Addison-Wesley">
+    <title>The Mythical Man Month</title>
+    <author>Frederick Brooks</author>
+  </book>
+  <book publisher="WROX">
+    <title>Professional XSLT 2nd Edition</title>
+    <author>Michael Kay</author>
+  </book>
+  <book publisher="Prentice Hall" on-loan="Sander" >
+   <title>Definitive XML Schema</title>
+   <author>Priscilla Walmsley</author>
+  </book>
+  <book publisher="APress">
+   <title>A Programmer's Introduction to C#</title>
+   <author>Eric Gunnerson</author>
+  </book>
+</books>
