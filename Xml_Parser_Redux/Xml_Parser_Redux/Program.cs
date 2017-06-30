@@ -18,10 +18,12 @@ namespace XmlParserThing
 
             try
             {
-                Console.WriteLine(aircraftId);
-                Console.WriteLine("");
-                XmlTextReader reader = new XmlTextReader("FlightLogs.xml");
-                ProcessLogs(reader);
+                //Console.WriteLine(aircraftId);
+                //Console.WriteLine("");
+                //XmlTextReader reader = new XmlTextReader("FlightLogs.xml");
+                //ProcessLogs(reader);
+
+                tabDelimit("hello", null);
             }
             catch (XmlException xe)
             {
@@ -36,12 +38,15 @@ namespace XmlParserThing
 
         static void ProcessLogs(XmlTextReader reader)
         {
+            string movieTitle;
+            EventList el;
+
             while (reader.Read())
             {
                 if (reader.Name.Equals("PlayLog"))
                 {
                     //Console.WriteLine(reader.GetAttribute("navigationPath"));
-                    string movieTitle = reader.GetAttribute("navigationPath");
+                    movieTitle = reader.GetAttribute("navigationPath");
                     Console.WriteLine(movieTitle);
                 }
 
@@ -51,7 +56,8 @@ namespace XmlParserThing
                     if (reader.GetAttribute("type") != null)
                     {
                         Console.WriteLine("---{0}---", reader.GetAttribute("type"));
-                        ProcessPlayEvent(reader, reader.GetAttribute("type"));
+                        el = new EventList();
+                        ProcessPlayEvent(reader, reader.GetAttribute("type"), el);
                     }
                     else
                     {
@@ -61,9 +67,8 @@ namespace XmlParserThing
             }
         }
 
-        static void ProcessPlayEvent(XmlTextReader reader, string attr)
+        static void ProcessPlayEvent(XmlTextReader reader, string attr, EventList el)
         {
-            EventList l = new EventList();
             TimeSpan ts;
             string startTime = "";
             string endTime = "";
@@ -92,16 +97,6 @@ namespace XmlParserThing
                             reader.Read();
                             break;
 
-                        //case "reason":
-                        //    Console.WriteLine("Reason: " + reader.ReadString());
-                        //    reader.Read();
-                        //    break;
-
-                        //case "Language":
-                        //    Console.WriteLine("Language: " + reader.ReadString());
-                        //    reader.Read();
-                        //    break;
-
                         //If reader cannot find a use case it skips to the next one
                         default:
                             reader.Skip();
@@ -128,8 +123,8 @@ namespace XmlParserThing
             //Console.WriteLine("EventID: " + generatePlayEventId(attr));
             //Console.WriteLine("");
 
-            l.add(startTime, endTime, ts.TotalSeconds, generatePlayEventId(attr));
-            l.printList();
+            el.add(startTime, endTime, ts.TotalSeconds, generatePlayEventId(attr));
+            el.printList();
             Console.WriteLine("");
         }   
 
@@ -155,38 +150,21 @@ namespace XmlParserThing
             return id;
         }
 
-        public static void delimit()
+        public static void tabDelimit(string title, EventList el)
         {
-            var delimiter = "";
+            var delimiter = "\t";
             //var itemContent = "H\t13\t170000000000001\t20150630D\t1050\t10.0000\tYD\t1050\t5.0000\tN";
-            var itemContent = "this,is,a,test,of,csv";
+            var itemContent = "this\tis\ta\ttest\tof\ttsv";
 
             FileStream fs = File.Create("C:/Users/sfalconer/Documents/Output.csv");
 
             Byte[] info = new UTF8Encoding(true).GetBytes(itemContent);
             fs.Write(info, 0, info.Length);
 
-            string tester = "hello,you";
-            var array = itemContent.Split(',');
-
-            string joinString = string.Join("\t", array);
-
-            Console.WriteLine(joinString);
+            var line = string.Join(delimiter, itemContent);
+            Console.WriteLine(line);
+            
         }
-
-
-        //--TEST SPACE--
-        /*string iString = "2016_10_04 15:38:21";
-        string jString = "2016_10_04 15:40:22";
-
-        DateTime oDate = DateTime.ParseExact(iString, "yyyy_MM_dd HH:mm:ss", null);
-        DateTime pDate = DateTime.ParseExact(jString, "yyyy_MM_dd HH:mm:ss", null);
-
-        Console.WriteLine("Date 1: " + oDate.ToString());
-        Console.WriteLine("Date 2: " + pDate.ToString());
-
-        TimeSpan duration = pDate - oDate;
-        Console.WriteLine("Diff: " + duration);*/
     }
 
     public class Node
@@ -196,7 +174,6 @@ namespace XmlParserThing
         public object endTime;
         public object duration;
         public object eventID;
-
     }
 
     public class EventList
@@ -229,9 +206,14 @@ namespace XmlParserThing
             while (curr != null)
             {
                 //curr = curr.next;
-                Console.WriteLine("Start Time: {0}\nEnd Time: {1}\nDuration: {2}\nEventID: {3}", curr.startTime, curr.endTime, curr.duration, curr.eventID);
+                //Console.WriteLine("Start Time: {0}\nEnd Time: {1}\nDuration: {2} secs\nEventID: {3}", curr.startTime, curr.endTime, curr.duration, curr.eventID);
                 curr = curr.next;
             }
+        }
+
+        public void collateList()
+        {
+            
         }
     }
 
