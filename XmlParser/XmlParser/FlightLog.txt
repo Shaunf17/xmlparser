@@ -1,0 +1,716 @@
+<?xml version="1.0"?>
+<ArrayOfPlayLogXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PlayLogXml>
+    <PlayLogXml>
+      <PlayLog version="iOS 1.13.431" navigationPath="Movies/The Blind Side" platform="iPad2,5">
+        <item filename="The_Blind_Side.smil">
+          <playEvents>
+            <playEvent type="Play">
+              <currentlyBufferingBitRate>757088</currentlyBufferingBitRate>
+              <startTime>2016_10_04 14:31:10</startTime>
+              <endTime>2016_10_04 14:31:13</endTime>
+            </playEvent>
+            <playEvent type="Widevine Stopping On Error">
+              <startTime>2016_10_04 14:31:13</startTime>
+              <reason>Mpeg2PsParser error 8</reason>
+            </playEvent>
+            <playEvent type="Play">
+              <currentlyBufferingBitRate>757088</currentlyBufferingBitRate>
+              <startTime>2016_10_04 14:31:13</startTime>
+              <endTime>2016_10_04 14:31:20</endTime>
+            </playEvent>
+            <playEvent type="Subtitles Selected">
+              <startTime>2016_10_04 14:32:21</startTime>
+              <Language>Dutch</Language>
+            </playEvent>
+            <playEvent type="Play">
+              <currentlyBufferingBitRate>757088</currentlyBufferingBitRate>
+              <startTime>2016_10_04 14:32:23</startTime>
+              <endTime>2016_10_04 15:37:30</endTime>
+            </playEvent>
+            <playEvent type="Seeking">
+              <startTime>2016_10_04 15:37:30</startTime>
+              <endTime>2016_10_04 15:37:30</endTime>
+            </playEvent>
+            <playEvent type="Play">
+              <currentlyBufferingBitRate>757088</currentlyBufferingBitRate>
+              <startTime>2016_10_04 15:37:34</startTime>
+              <endTime>2016_10_04 15:37:36</endTime>
+            </playEvent>
+            <playEvent type="Pause">
+              <startTime>2016_10_04 15:37:36</startTime>
+              <reason>Headphones Removed</reason>
+              <endTime>2016_10_04 15:37:59</endTime>
+            </playEvent>
+            <playEvent type="Play">
+              <currentlyBufferingBitRate>757088</currentlyBufferingBitRate>
+              <startTime>2016_10_04 15:37:59</startTime>
+              <endTime>2016_10_04 15:38:02</endTime>
+            </playEvent>
+            <playEvent type="Play">
+              <currentlyBufferingBitRate>757088</currentlyBufferingBitRate>
+              <startTime>2016_10_04 15:38:03</startTime>
+              <endTime>2016_10_04 15:38:04</endTime>
+            </playEvent>
+            <playEvent type="Seeking">
+              <startTime>2016_10_04 15:38:04</startTime>
+              <endTime>2016_10_04 15:38:05</endTime>
+            </playEvent>
+            <playEvent type="Play">
+              <currentlyBufferingBitRate>757088</currentlyBufferingBitRate>
+              <startTime>2016_10_04 15:38:11</startTime>
+              <endTime>2016_10_04 15:38:11</endTime>
+            </playEvent>
+            <playEvent type="Seeking">
+              <startTime>2016_10_04 15:38:11</startTime>
+              <endTime>2016_10_04 15:38:11</endTime>
+            </playEvent>
+            <playEvent type="Seeking">
+              <startTime>2016_10_04 15:38:13</startTime>
+              <endTime>2016_10_04 15:38:14</endTime>
+            </playEvent>
+            <playEvent type="Seeking">
+              <startTime>2016_10_04 15:38:15</startTime>
+              <endTime>2016_10_04 15:38:16</endTime>
+            </playEvent>
+            <playEvent type="Play">
+              <currentlyBufferingBitRate>757088</currentlyBufferingBitRate>
+              <startTime>2016_10_04 15:38:21</startTime>
+              <endTime>2016_10_04 15:38:22</endTime>
+            </playEvent>
+            <playEvent type="Seeking">
+              <startTime>2016_10_04 15:38:22</startTime>
+              <endTime>2016_10_04 15:38:23</endTime>
+            </playEvent>
+            <playEvent type="Play">
+              <currentlyBufferingBitRate>757088</currentlyBufferingBitRate>
+              <startTime>2016_10_04 15:38:27</startTime>
+              <endTime>2016_10_04 15:38:29</endTime>
+            </playEvent>
+            <playEvent type="Seeking">
+              <startTime>2016_10_04 15:38:29</startTime>
+              <endTime>2016_10_04 15:38:30</endTime>
+            </playEvent>
+            <playEvent type="Play">
+              <currentlyBufferingBitRate>757088</currentlyBufferingBitRate>
+              <startTime>2016_10_04 15:38:35</startTime>
+              <endTime>2016_10_04 16:34:16</endTime>
+            </playEvent>
+            <playEvent type="Pause">
+              <startTime>2016_10_04 16:34:16</startTime>
+              <reason>Headphones Removed</reason>
+              <endTime>2016_10_04 16:34:29</endTime>
+            </playEvent>
+            <playEvent type="Entered Background">
+              <startTime>2016_10_04 16:34:29</startTime>
+              <reason>User pressed home or power button</reason>
+            </playEvent>
+            <playEvent type="App Terminated">
+              <startTime>2016_10_11 23:05:02</startTime>
+              <reason>App force quit by user or device turned off</reason>
+            </playEvent>
+          </playEvents>
+        </item>
+      </PlayLog>
+    </PlayLogXml>
+  </PlayLogXml>
+  <PlayLogXml>
+    <PlayLogXml>
+      <PlayLog version="iOS 1.13.431" navigationPath="TV/Bob l’Éponge" platform="iPhone7,2">
+        <item filename="Spongebob_Square_Pants_S4_E20.smil">
+          <playEvents>
+            <playEvent type="Play">
+              <currentlyBufferingBitRate>757024</currentlyBufferingBitRate>
+              <startTime>2016_10_11 21:19:22</startTime>
+              <endTime>2016_10_11 21:19:22</endTime>
+            </playEvent>
+            <playEvent type="Play">
+              <currentlyBufferingBitRate>1510952</currentlyBufferingBitRate>
+              <startTime>2016_10_11 21:19:22</startTime>
+              <endTime>2016_10_11 21:19:28</endTime>
+            </playEvent>
+            <playEvent type="Widevine Stopping On Error">
+              <startTime>2016_10_11 21:19:28</startTime>
+              <reason>CFStream error: The operation couldn’t be completed. Network is down</reason>
+            </playEvent>
+            <playEvent type="Play">
+              <currentlyBufferingBitRate>1510952</currentlyBufferingBitRate>
+              <startTime>2016_10_11 21:19:28</startTime>
+              <endTime>2016_10_11 21:19:56</endTime>
+            </playEvent>
+            <playEvent type="Play">
+              <currentlyBufferingBitRate>1510952</currentlyBufferingBitRate>
+              <startTime>2016_10_11 21:20:00</startTime>
+              <endTime>2016_10_11 21:29:10</endTime>
+            </playEvent>
+            <playEvent type="Widevine Stopping On Error">
+              <startTime>2016_10_11 21:29:10</startTime>
+              <reason>CFStream error: The operation couldn’t be completed. Network is down</reason>
+            </playEvent>
+            <playEvent type="Play">
+              <currentlyBufferingBitRate>1510952</currentlyBufferingBitRate>
+              <startTime>2016_10_11 21:29:11</startTime>
+              <endTime>2016_10_11 21:31:29</endTime>
+            </playEvent>
+            <playEvent type="Entered Background">
+              <startTime>2016_10_11 21:31:29</startTime>
+              <reason>User pressed home or power button</reason>
+            </playEvent>
+            <playEvent type="App Terminated">
+              <startTime>2016_10_11 22:09:40</startTime>
+              <reason>App force quit by user or device turned off</reason>
+            </playEvent>
+          </playEvents>
+        </item>
+      </PlayLog>
+    </PlayLogXml>
+  </PlayLogXml>
+  <PlayLogXml>
+    <PlayLogXml>
+      <PlayLog version="Android 1.1.238" navigationPath="Movies/The Great Gatsby" platform="device heatqlte, model SM-G357FZ, product heatqltexx, brand samsung" DevideId="samsung/heatqltexx/heatqlte:4.4.4/KTU84P/G357FZXXU1APG1:user/release-keys" osVersion="19">
+        <item filename="The_Great_Gatsby.smil">
+          <playEvents>
+            <playEvent type="play">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:19:08</startTime>
+              <endTime>2016_10_11 09:19:18</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="Seeking">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:19:18</startTime>
+              <endTime>2016_10_11 09:19:20</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="play">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:19:20</startTime>
+              <endTime>2016_10_11 09:19:26</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="Seeking">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:19:26</startTime>
+              <endTime>2016_10_11 09:19:26</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="play">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:19:26</startTime>
+              <endTime>2016_10_11 09:19:37</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="Seeking">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:19:37</startTime>
+              <endTime>2016_10_11 09:19:38</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="play">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:19:38</startTime>
+              <endTime>2016_10_11 09:19:39</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="Seeking">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:19:39</startTime>
+              <endTime>2016_10_11 09:19:39</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="play">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:19:39</startTime>
+              <endTime>2016_10_11 09:19:40</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="Seeking">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:19:40</startTime>
+              <endTime>2016_10_11 09:19:41</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="play">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:19:41</startTime>
+              <endTime>2016_10_11 09:19:44</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="Seeking">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:19:44</startTime>
+              <endTime>2016_10_11 09:19:44</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="play">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:19:44</startTime>
+              <endTime>2016_10_11 09:19:45</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="Seeking">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:19:45</startTime>
+              <endTime>2016_10_11 09:19:45</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="play">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:19:45</startTime>
+              <endTime>2016_10_11 09:19:46</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="Seeking">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:19:46</startTime>
+              <endTime>2016_10_11 09:19:46</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="play">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:19:46</startTime>
+              <endTime>2016_10_11 09:19:46</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="Seeking">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:19:46</startTime>
+              <endTime>2016_10_11 09:19:47</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="play">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:19:47</startTime>
+              <endTime>2016_10_11 09:42:15</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="pause">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:42:15</startTime>
+              <endTime>2016_10_11 09:42:25</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="pause">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:42:25</startTime>
+              <endTime>2016_10_11 09:42:35</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="pause">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:42:35</startTime>
+              <endTime>2016_10_11 09:42:37</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="play">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:42:37</startTime>
+              <endTime>2016_10_11 09:48:51</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="pause">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:48:51</startTime>
+              <endTime>2016_10_11 09:49:01</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="pause">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:49:01</startTime>
+              <endTime>2016_10_11 09:49:11</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="pause">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:49:11</startTime>
+              <endTime>2016_10_11 09:49:21</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="pause">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:49:21</startTime>
+              <endTime>2016_10_11 09:49:31</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="pause">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:49:31</startTime>
+              <endTime>2016_10_11 09:49:41</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="pause">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:49:41</startTime>
+              <endTime>2016_10_11 09:49:51</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="pause">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:49:51</startTime>
+              <endTime>2016_10_11 09:50:01</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="pause">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:50:01</startTime>
+              <endTime>2016_10_11 09:50:10</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="play">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:50:10</startTime>
+              <endTime>2016_10_11 09:51:36</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="pause">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:51:36</startTime>
+              <endTime>2016_10_11 09:51:47</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="pause">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:51:47</startTime>
+              <endTime>2016_10_11 09:51:56</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="pause">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:51:56</startTime>
+              <endTime>2016_10_11 09:52:07</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="pause">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:52:07</startTime>
+              <endTime>2016_10_11 09:52:09</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="play">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:52:09</startTime>
+              <endTime>2016_10_11 11:10:51</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="pause">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 11:10:51</startTime>
+              <endTime>2016_10_11 11:10:52</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="Seeking">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 11:10:52</startTime>
+              <endTime>2016_10_11 11:10:52</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="play">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 11:10:52</startTime>
+              <endTime>2016_10_11 11:10:56</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="Ended">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 11:10:56</startTime>
+              <endTime />
+              <reason>User Ended</reason>
+            </playEvent>
+          </playEvents>
+        </item>
+      </PlayLog>
+    </PlayLogXml>
+  </PlayLogXml>
+  <PlayLogXml>
+    <PlayLogXml>
+      <PlayLog version="Android 1.1.238" navigationPath="Movies/The Bucket List" platform="device gtaxllte, model SM-T585, product gtaxlltexx, brand samsung" DevideId="samsung/gtaxlltexx/gtaxllte:6.0.1/MMB29K/T585XXU1APG1:user/release-keys" osVersion="23">
+        <item filename="The_Bucket_List.smil">
+          <playEvents>
+            <playEvent type="Ended">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 11:16:59</startTime>
+              <endTime>2016_10_11 11:16:59</endTime>
+              <reason>ON ERROR FAILED WITH ERR =Attempt to invoke virtual method 'java.lang.Object android.content.ContentValues.get(java.lang.String)' on a null object reference</reason>
+            </playEvent>
+          </playEvents>
+        </item>
+      </PlayLog>
+    </PlayLogXml>
+  </PlayLogXml>
+  <PlayLogXml>
+    <PlayLogXml>
+      <PlayLog version="Android 1.1.238" navigationPath="Movies/The Bucket List" platform="device gtaxllte, model SM-T585, product gtaxlltexx, brand samsung" DevideId="samsung/gtaxlltexx/gtaxllte:6.0.1/MMB29K/T585XXU1APG1:user/release-keys" osVersion="23">
+        <item filename="The_Bucket_List.smil">
+          <playEvents>
+            <playEvent type="Ended">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 11:20:38</startTime>
+              <endTime>2016_10_11 11:20:38</endTime>
+              <reason>ON ERROR FAILED WITH ERR =Attempt to invoke virtual method 'java.lang.Object android.content.ContentValues.get(java.lang.String)' on a null object reference</reason>
+            </playEvent>
+          </playEvents>
+        </item>
+      </PlayLog>
+    </PlayLogXml>
+  </PlayLogXml>
+  <PlayLogXml>
+    <PlayLogXml>
+      <PlayLog version="Android 1.1.238" navigationPath="Movies/The Bucket List" platform="device gtaxllte, model SM-T585, product gtaxlltexx, brand samsung" DevideId="samsung/gtaxlltexx/gtaxllte:6.0.1/MMB29K/T585XXU1APG1:user/release-keys" osVersion="23">
+        <item filename="The_Bucket_List.smil">
+          <playEvents>
+            <playEvent type="Ended">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 11:24:54</startTime>
+              <endTime>2016_10_11 11:24:54</endTime>
+              <reason>ON ERROR FAILED WITH ERR =Attempt to invoke virtual method 'java.lang.Object android.content.ContentValues.get(java.lang.String)' on a null object reference</reason>
+            </playEvent>
+          </playEvents>
+        </item>
+      </PlayLog>
+    </PlayLogXml>
+  </PlayLogXml>
+  <PlayLogXml>
+    <PlayLogXml>
+      <PlayLog version="Android 1.1.238" navigationPath="Movies/Pacific Rim" platform="device a5ulte, model SM-A500FU, product a5ultexx, brand samsung" DevideId="samsung/a5ultexx/a5ulte:5.0.2/LRX22G/A500FUXXS1BPG3:user/release-keys" osVersion="21">
+        <item filename="Pacific_Rim.smil">
+          <playEvents>
+            <playEvent type="play">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:29:23</startTime>
+              <endTime>2016_10_11 09:29:41</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="Seeking">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:29:41</startTime>
+              <endTime>2016_10_11 09:29:41</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="play">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:29:41</startTime>
+              <endTime>2016_10_11 09:29:42</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="Seeking">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:29:42</startTime>
+              <endTime>2016_10_11 09:29:42</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="play">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:29:42</startTime>
+              <endTime>2016_10_11 09:29:43</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="Seeking">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:29:43</startTime>
+              <endTime>2016_10_11 09:29:43</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="play">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:29:43</startTime>
+              <endTime>2016_10_11 09:29:57</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="Seeking">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:29:57</startTime>
+              <endTime>2016_10_11 09:29:57</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="play">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:29:57</startTime>
+              <endTime>2016_10_11 09:30:00</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="Seeking">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:30:00</startTime>
+              <endTime>2016_10_11 09:30:00</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="play">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:30:00</startTime>
+              <endTime>2016_10_11 09:42:13</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="pause">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:42:13</startTime>
+              <endTime>2016_10_11 09:42:23</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="pause">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:42:23</startTime>
+              <endTime>2016_10_11 09:42:33</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="pause">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:42:33</startTime>
+              <endTime>2016_10_11 09:42:35</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="play">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:42:35</startTime>
+              <endTime>2016_10_11 09:48:49</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="pause">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:48:49</startTime>
+              <endTime>2016_10_11 09:48:59</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="pause">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:48:59</startTime>
+              <endTime>2016_10_11 09:49:09</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="pause">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:49:09</startTime>
+              <endTime>2016_10_11 09:49:19</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="pause">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:49:19</startTime>
+              <endTime>2016_10_11 09:49:29</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="pause">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:49:29</startTime>
+              <endTime>2016_10_11 09:49:39</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="pause">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:49:39</startTime>
+              <endTime>2016_10_11 09:49:49</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="pause">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:49:49</startTime>
+              <endTime>2016_10_11 09:49:59</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="pause">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:49:59</startTime>
+              <endTime>2016_10_11 09:50:08</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="play">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:50:08</startTime>
+              <endTime>2016_10_11 09:50:19</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="pause">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:50:19</startTime>
+              <endTime>2016_10_11 09:51:35</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="pause">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:51:35</startTime>
+              <endTime>2016_10_11 09:51:45</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="pause">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:51:45</startTime>
+              <endTime>2016_10_11 09:51:55</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="pause">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:51:55</startTime>
+              <endTime>2016_10_11 09:52:05</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="pause">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:52:05</startTime>
+              <endTime>2016_10_11 09:52:07</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="play">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:52:07</startTime>
+              <endTime>2016_10_11 09:53:22</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="pause">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:53:22</startTime>
+              <endTime>2016_10_11 09:54:23</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="play">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 09:54:23</startTime>
+              <endTime>2016_10_11 11:04:48</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="pause">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 11:04:48</startTime>
+              <endTime>2016_10_11 11:14:35</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="play">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 11:14:35</startTime>
+              <endTime>2016_10_11 11:26:30</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="Seeking">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 11:26:30</startTime>
+              <endTime>2016_10_11 11:26:30</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="play">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 11:26:30</startTime>
+              <endTime>2016_10_11 11:26:33</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="Seeking">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 11:26:33</startTime>
+              <endTime>2016_10_11 11:26:33</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="play">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 11:26:33</startTime>
+              <endTime>2016_10_11 11:26:37</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="Ended">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_11 11:26:37</startTime>
+              <endTime />
+              <reason>User Ended</reason>
+            </playEvent>
+          </playEvents>
+        </item>
+      </PlayLog>
+    </PlayLogXml>
+  </PlayLogXml>
+</ArrayOfPlayLogXml>
