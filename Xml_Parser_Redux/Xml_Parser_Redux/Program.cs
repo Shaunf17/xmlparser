@@ -38,15 +38,15 @@ namespace XmlParserThing
 
         static void ProcessLogs(XmlTextReader reader)
         {
-            //string filePath = "C:/Users/Shaun/Desktop/output.txt"; //Change for own use
-            string movieTitle;
+            FileStream fs = null;
+            string filePath = "C:/Users/Shaun/Desktop/output.txt"; //Change for own use
+            string movieTitle = "";
             EventList el;
 
             while (reader.Read())
             {
                 if (reader.Name.Equals("PlayLog"))
                 {
-                    //Console.WriteLine(reader.GetAttribute("navigationPath"));
                     movieTitle = reader.GetAttribute("navigationPath");
                     Console.WriteLine(movieTitle);
                 }
@@ -59,12 +59,16 @@ namespace XmlParserThing
                         Console.WriteLine("---{0}---", reader.GetAttribute("type"));
                         el = new EventList();
                         ProcessPlayEvent(reader, reader.GetAttribute("type"), el);
+                        tabDelimit(filePath, movieTitle, el, fs);
                     }
                     else
                     {
                         reader.Skip();
                     }
                 }
+
+                
+
             }
         }
 
@@ -152,13 +156,16 @@ namespace XmlParserThing
             return id;
         }
 
-        public static void tabDelimit(string fileName, string title, EventList el)
+        public static void tabDelimit(string fileName, string title, EventList el, FileStream fs)
         {
             //var path = "C:/Users/Shaun/Desktop/output.txt"; 
+            StreamWriter sw;
             var delimiter = "\t";
-            var itemContent = "this\tis\ta\ttest\tof\ttsv";
+            string itemContent = "this\tis\ta\ttest\tof\ttsv";
 
-            FileStream fs = File.Create(fileName);
+            string tester = el.collateList();
+
+            //FileStream fs = File.Create(fileName);
 
             //Byte[] info = new UTF8Encoding(true).GetBytes(itemContent);
             //fs.Write(info, 0, info.Length);
@@ -169,7 +176,14 @@ namespace XmlParserThing
             //var line = string.Join(delimiter, itemContent);
             //var line = "{0} test {1}", "what", "tester";
             Console.WriteLine("{0} test {1}", "what", "tester");
-            
+
+            if (!File.Exists(fileName))
+            {
+                Console.WriteLine("File Created");
+                File.Create(fileName);
+            }
+
+            File.AppendAllText(fileName, tester); 
         }
     }
 
@@ -217,14 +231,28 @@ namespace XmlParserThing
             }
         }
 
-        public void collateList()
+        public string[] getStringArray()
         {
             Node curr = head.next;
 
+            string[] stringArray = new string[4];
+            string joinedText;
+            string delimiter = "\t";
+
             while (curr != null)
             {
-                string catString = "{0}\t{1}\t{2}\t{3}";
+                stringArray[0] = curr.startTime.ToString();
+                stringArray[1] = curr.endTime.ToString();
+                stringArray[2] = curr.duration.ToString();
+                stringArray[3] = curr.eventID.ToString();
+                curr = curr.next;
+
+                return stringArray;
             }
+
+
+
+            return null;    
         }
     }
 
