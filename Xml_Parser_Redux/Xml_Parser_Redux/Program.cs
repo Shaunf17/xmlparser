@@ -19,12 +19,23 @@ namespace XmlParserThing
             try
             {
                 if (File.Exists("C:/Users/sfalconer/Desktop/generic.txt"))
-                    File.Delete("C:/Users/sfalconer/Desktop/generic.txt"); //Temporary deletion of the file
+                    File.Delete("C:/Users/sfalconer/Desktop/generic.txt"); //Temporary deletion of the file to start with clean slate
                 Console.WriteLine(aircraftId);
                 Console.WriteLine("");
                 XmlTextReader reader = new XmlTextReader("FlightLogs.xml");
                 ProcessLogs(reader);
 
+                Contents c = new Contents();
+
+                c.insert(3, "World");
+                c.insert(1, "Hello");
+                c.insert(2, "There");
+
+                foreach (var s in c.getFields())
+                {
+                    Console.WriteLine(s);
+                }
+                
                 //tabDelimit("hello", null);
             }
             catch (XmlException xe)
@@ -66,6 +77,18 @@ namespace XmlParserThing
                         ProcessPlayEvent(reader, reader.GetAttribute("type"), el);
                         tabDelimit(filePath, playEvent, el, fs);
 
+                        /* TESTING FOR STRING SPLITTING 
+                        string titleTest = "Movie/The Corpse Bride";
+                        Byte[] info = new UTF8Encoding(true).GetBytes(titleTest);
+                        
+
+                        string[] title = titleTest.Split('/');
+                        foreach (var sub in title)
+                        {
+                            Console.WriteLine(sub);
+                        }
+                        */
+
                         //el.printList(); //PRINT LIST WORKS HERE ALSO
                     }
                     else
@@ -73,15 +96,12 @@ namespace XmlParserThing
                         reader.Skip();
                     }
                 }
-
-                
-
             }
         }
 
         static void ProcessPlayEvent(XmlTextReader reader, string attr, EventList el)
         {
-            
+
             TimeSpan ts;
             string startTime = "";
             string endTime = "";
@@ -137,10 +157,13 @@ namespace XmlParserThing
             //Console.WriteLine("");
 
             el.add(startTime, endTime, ts.TotalSeconds, generatePlayEventId(attr));
-            el.printList();
+            //el.printList();
+
+            Contents c = new Contents();
+            c.passThroughNodes(el);
 
             Console.WriteLine("");
-        }   
+        }
 
         public static TimeSpan getDurationOfPlayEvent(string startTime, string endTime)
         {
@@ -159,7 +182,7 @@ namespace XmlParserThing
         public static string generatePlayEventId(string attr)
         {
             string id;
-            id = attr.Substring(0,3) + "-" + Guid.NewGuid().ToString().Replace("-", string.Empty).Substring(0, 4);
+            id = attr.Substring(0, 3) + "-" + Guid.NewGuid().ToString().Replace("-", string.Empty).Substring(0, 4);
 
             return id;
         }
@@ -171,19 +194,6 @@ namespace XmlParserThing
             var delimiter = "\t";
             string itemContent = "this\tis\ta\ttest\tof\ttsv";
             string fileName = "/generic.txt";
-
-            //string tester = el.collateList();
-
-            //FileStream fs = File.Create(filePath);
-
-            //Byte[] info = new UTF8Encoding(true).GetBytes(itemContent);
-            //fs.Write(info, 0, info.Length);
-
-            //Byte[] info = new UTF8Encoding(true).GetBytes(el.printList());
-
-
-            //var line = string.Join(delimiter, itemContent);
-            //var line = "{0} test {1}", "what", "tester";
 
             if (!File.Exists(filePath + fileName))
             {
@@ -257,7 +267,32 @@ namespace XmlParserThing
                 return values;
             }
 
-            return null;    
+           return string.Empty; 
+        }
+    }
+
+    public class Contents
+    {
+        public string[] fields = new string[21];
+        public string[] Fields
+        {
+            get { return fields; }
+            set { fields = value; }
+        }
+
+        public void insert(int index, string val)
+        {
+            fields[index] = val;
+        }
+
+        public string [] getFields()
+        {
+            return fields;
+        }
+
+        public void passThroughNodes(EventList el)
+        {
+            el.printList();
         }
     }
 

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<ArrayOfPlayLogXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PlayLogXml>
+    <PlayLogXml>
+      <PlayLog version="iOS 1.13.431" navigationPath="Movies/De LEGO film" platform="iPhone8,1">
+        <item filename="The_Lego_Movie.smil">
+          <playEvents>
+            <playEvent type="Pause">
+              <startTime>2016_10_13 06:33:10</startTime>
+              <reason>Headphones Removed</reason>
+              <endTime>2016_10_13 06:33:17</endTime>
+            </playEvent>
+            <playEvent type="Ended">
+              <reason>User Ended By Cancelling Headphone Warning</reason>
+              <startTime>2016_10_13 06:33:17</startTime>
+            </playEvent>
+          </playEvents>
+        </item>
+      </PlayLog>
+    </PlayLogXml>
+  </PlayLogXml>
+</ArrayOfPlayLogXml>
