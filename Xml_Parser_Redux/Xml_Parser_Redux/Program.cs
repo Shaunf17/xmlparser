@@ -18,6 +18,8 @@ namespace XmlParserThing
 
             try
             {
+                if (File.Exists("C:/Users/sfalconer/Desktop/generic.txt"))
+                    File.Delete("C:/Users/sfalconer/Desktop/generic.txt"); //Temporary deletion of the file
                 Console.WriteLine(aircraftId);
                 Console.WriteLine("");
                 XmlTextReader reader = new XmlTextReader("FlightLogs.xml");
@@ -39,8 +41,10 @@ namespace XmlParserThing
         static void ProcessLogs(XmlTextReader reader)
         {
             FileStream fs = null;
-            string filePath = "C:/Users/Shaun/Desktop/output.txt"; //Change for own use
+            string filePath = Environment.GetFolderPath(
+                         System.Environment.SpecialFolder.DesktopDirectory);
             string movieTitle = "";
+            string playEvent = "";
             EventList el;
 
             while (reader.Read())
@@ -56,10 +60,13 @@ namespace XmlParserThing
                 {
                     if (reader.GetAttribute("type") != null)
                     {
+                        playEvent = reader.GetAttribute("type");
                         Console.WriteLine("---{0}---", reader.GetAttribute("type"));
                         el = new EventList();
                         ProcessPlayEvent(reader, reader.GetAttribute("type"), el);
-                        tabDelimit(filePath, movieTitle, el, fs);
+                        tabDelimit(filePath, playEvent, el, fs);
+
+                        //el.printList(); //PRINT LIST WORKS HERE ALSO
                     }
                     else
                     {
@@ -74,7 +81,7 @@ namespace XmlParserThing
 
         static void ProcessPlayEvent(XmlTextReader reader, string attr, EventList el)
         {
-            string filePath = "C:/Users/Shaun/Desktop/output.txt"; //Change for own use
+            
             TimeSpan ts;
             string startTime = "";
             string endTime = "";
@@ -131,6 +138,7 @@ namespace XmlParserThing
 
             el.add(startTime, endTime, ts.TotalSeconds, generatePlayEventId(attr));
             el.printList();
+
             Console.WriteLine("");
         }   
 
@@ -156,16 +164,17 @@ namespace XmlParserThing
             return id;
         }
 
-        public static void tabDelimit(string fileName, string title, EventList el, FileStream fs)
+        public static void tabDelimit(string filePath, string attr, EventList el, FileStream fs)
         {
             //var path = "C:/Users/Shaun/Desktop/output.txt"; 
             StreamWriter sw;
             var delimiter = "\t";
             string itemContent = "this\tis\ta\ttest\tof\ttsv";
+            string fileName = "/generic.txt";
 
-            string tester = el.collateList();
+            //string tester = el.collateList();
 
-            //FileStream fs = File.Create(fileName);
+            //FileStream fs = File.Create(filePath);
 
             //Byte[] info = new UTF8Encoding(true).GetBytes(itemContent);
             //fs.Write(info, 0, info.Length);
@@ -175,15 +184,17 @@ namespace XmlParserThing
 
             //var line = string.Join(delimiter, itemContent);
             //var line = "{0} test {1}", "what", "tester";
-            Console.WriteLine("{0} test {1}", "what", "tester");
 
-            if (!File.Exists(fileName))
+            if (!File.Exists(filePath + fileName))
             {
                 Console.WriteLine("File Created");
-                File.Create(fileName);
+                var myFile = File.Create(filePath + fileName);
+                myFile.Close();
             }
 
-            File.AppendAllText(fileName, tester); 
+            File.AppendAllText(filePath + fileName, attr + "\r\n");
+            File.AppendAllText(filePath + fileName, el.collateValues());
+            File.AppendAllText(filePath + fileName, "\r\n");
         }
     }
 
@@ -231,26 +242,20 @@ namespace XmlParserThing
             }
         }
 
-        public string[] getStringArray()
+        public string collateValues()
         {
             Node curr = head.next;
 
-            string[] stringArray = new string[4];
+            string values;
             string joinedText;
             string delimiter = "\t";
 
             while (curr != null)
             {
-                stringArray[0] = curr.startTime.ToString();
-                stringArray[1] = curr.endTime.ToString();
-                stringArray[2] = curr.duration.ToString();
-                stringArray[3] = curr.eventID.ToString();
-                curr = curr.next;
+                values = string.Format($"{curr.startTime.ToString()}\t{curr.endTime.ToString()}\t{curr.duration.ToString()}\t{curr.eventID}\r\n");
 
-                return stringArray;
+                return values;
             }
-
-
 
             return null;    
         }
