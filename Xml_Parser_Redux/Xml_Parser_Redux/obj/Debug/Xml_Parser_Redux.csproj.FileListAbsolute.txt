@@ -6,3 +6,11 @@ c:\users\sfalconer\documents\visual studio 2015\Projects\Xml_Parser_Redux\Xml_Pa
 c:\users\sfalconer\documents\visual studio 2015\Projects\Xml_Parser_Redux\Xml_Parser_Redux\obj\Debug\Xml_Parser_Redux.pdb
 c:\users\sfalconer\documents\visual studio 2015\Projects\Xml_Parser_Redux\Xml_Parser_Redux\bin\Debug\books.xml
 c:\users\sfalconer\documents\visual studio 2015\Projects\Xml_Parser_Redux\Xml_Parser_Redux\bin\Debug\FlightLogs.xml
+C:\Users\Shaun\Downloads\xmlparser-master\Xml_Parser_Redux\Xml_Parser_Redux\bin\Debug\Xml_Parser_Redux.exe.config
+C:\Users\Shaun\Downloads\xmlparser-master\Xml_Parser_Redux\Xml_Parser_Redux\obj\Debug\Xml_Parser_Redux.exe
+C:\Users\Shaun\Downloads\xmlparser-master\Xml_Parser_Redux\Xml_Parser_Redux\obj\Debug\Xml_Parser_Redux.pdb
+C:\Users\Shaun\Downloads\xmlparser-master\Xml_Parser_Redux\Xml_Parser_Redux\bin\Debug\books.xml
+C:\Users\Shaun\Downloads\xmlparser-master\Xml_Parser_Redux\Xml_Parser_Redux\bin\Debug\FlightLogs.xml
+C:\Users\Shaun\Downloads\xmlparser-master\Xml_Parser_Redux\Xml_Parser_Redux\bin\Debug\Xml_Parser_Redux.exe
+C:\Users\Shaun\Downloads\xmlparser-master\Xml_Parser_Redux\Xml_Parser_Redux\bin\Debug\Xml_Parser_Redux.pdb
+C:\Users\Shaun\Downloads\xmlparser-master\Xml_Parser_Redux\Xml_Parser_Redux\obj\Debug\Xml_Parser_Redux.csprojResolveAssemblyReference.cache
