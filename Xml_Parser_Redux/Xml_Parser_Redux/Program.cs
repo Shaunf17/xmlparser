@@ -7,6 +7,7 @@ using System.Xml;
 using System.Xml.Serialization;
 using System.IO;
 using System.Data;
+using System.Reflection;
 
 namespace XmlParserThing
 {
@@ -24,17 +25,6 @@ namespace XmlParserThing
                 Console.WriteLine("");
                 XmlTextReader reader = new XmlTextReader("FlightLogs.xml");
                 ProcessLogs(reader);
-
-                Contents c = new Contents();
-
-                c.insert(3, "World");
-                c.insert(1, "Hello");
-                c.insert(2, "There");
-
-                foreach (var s in c.getFields())
-                {
-                    Console.WriteLine(s);
-                }
                 
                 //tabDelimit("hello", null);
             }
@@ -161,6 +151,11 @@ namespace XmlParserThing
 
             Contents c = new Contents();
             c.passThroughNodes(el);
+
+            //foreach (string s in c.getFields())
+            //{
+            //    Console.WriteLine(s);
+            //}
 
             Console.WriteLine("");
         }
@@ -292,7 +287,12 @@ namespace XmlParserThing
 
         public void passThroughNodes(EventList el)
         {
-            el.printList();
+            el.printList(); //Test call to see where exactly when and how this method operates
+            for (int i = 0; i < fields.Length; i++)
+            {
+                fields[i] = i.ToString();
+            }
+            
         }
     }
 
