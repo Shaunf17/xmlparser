@@ -24,12 +24,14 @@ namespace XmlParserThing
                 Console.WriteLine(aircraftId);
                 Console.WriteLine("");
                 XmlTextReader reader = new XmlTextReader("FlightLogs.xml");
-                ProcessLogs(reader);
-                
-                //tabDelimit("hello", null);
+                //ProcessLogs(reader);
+                PlayLog p = new PlayLog(reader);
+                p.processPlayEvent();
+                p.printList();
+
             }
             catch (XmlException xe)
-            {
+            {   
                 Console.WriteLine("XML Parsing Error: " + xe);
             }
             catch (IOException ioe)
@@ -39,47 +41,40 @@ namespace XmlParserThing
             Console.ReadKey();
         }
 
+        public static void writeToFile()
+        {
+        }
+
         static void ProcessLogs(XmlTextReader reader)
         {
             FileStream fs = null;
             string filePath = Environment.GetFolderPath(
                          System.Environment.SpecialFolder.DesktopDirectory);
-            string movieTitle = "";
+            string title = "";
             string playEvent = "";
-            EventList el;
+
+            List<Content> content = new List<Content>();
+            int test = 0;
 
             while (reader.Read())
             {
                 if (reader.Name.Equals("PlayLog"))
                 {
-                    movieTitle = reader.GetAttribute("navigationPath");
-                    Console.WriteLine(movieTitle);
+                    //GETS TITLE OF MOVIE
+                    title = reader.GetAttribute("navigationPath");
+                    //Console.WriteLine(title);
                 }
 
                 if (reader.Name.Equals("playEvent") &&
                     (reader.NodeType == XmlNodeType.Element))
                 {
+
                     if (reader.GetAttribute("type") != null)
                     {
-                        playEvent = reader.GetAttribute("type");
-                        Console.WriteLine("---{0}---", reader.GetAttribute("type"));
-                        el = new EventList();
-                        ProcessPlayEvent(reader, reader.GetAttribute("type"), el);
-                        tabDelimit(filePath, playEvent, el, fs);
-
-                        /* TESTING FOR STRING SPLITTING 
-                        string titleTest = "Movie/The Corpse Bride";
-                        Byte[] info = new UTF8Encoding(true).GetBytes(titleTest);
-                        
-
-                        string[] title = titleTest.Split('/');
-                        foreach (var sub in title)
-                        {
-                            Console.WriteLine(sub);
-                        }
-                        */
-
-                        //el.printList(); //PRINT LIST WORKS HERE ALSO
+                        //GETS PLAY EVENT NAME
+                       // playEvent = reader.GetAttribute("type");
+                        //Console.WriteLine("---{0}---", reader.GetAttribute("type"));
+                        ProcessPlayEvent(title, reader, reader.GetAttribute("type"), content, test);    //READ INFO FROM PLAY EVENT 
                     }
                     else
                     {
@@ -87,14 +82,30 @@ namespace XmlParserThing
                     }
                 }
             }
+
+            foreach (Content c in content)
+            {
+                Console.WriteLine(c);
+            }
+
         }
 
-        static void ProcessPlayEvent(XmlTextReader reader, string attr, EventList el)
+        static void ProcessPlayEvent(string title, XmlTextReader reader, string attr, List<Content> content, int test)
         {
-
             TimeSpan ts;
+            string[] contentTitle;
+            string titleCategory;
+            string titleGenre;
+
             string startTime = "";
             string endTime = "";
+
+            string totalPlayed;
+            string totalPaused;
+                    
+            contentTitle = seperateTitle(title);
+            titleCategory = contentTitle[0];
+            titleGenre = contentTitle[1];
 
             while (reader.NodeType != XmlNodeType.EndElement &&
                 reader.Read())
@@ -104,11 +115,6 @@ namespace XmlParserThing
                     //Compare each element name and extract the ones we are interested in
                     switch (reader.Name)
                     {
-                        //case "bitRate":
-                        //    Console.WriteLine("Bitrate: " + reader.ReadString());
-                        //    reader.Read();
-                        //    break;
-
                         case "startTime":
                             startTime = reader.ReadString().ToString();
                             //Console.WriteLine("Start Time: " + startTime);
@@ -120,7 +126,6 @@ namespace XmlParserThing
                             reader.Read();
                             break;
 
-                        //If reader cannot find a use case it skips to the next one
                         default:
                             reader.Skip();
                             break;
@@ -128,36 +133,24 @@ namespace XmlParserThing
                     } //End switch
                 } //End if
             } //End element comparison
+              //Displays information about each individual Play Event
 
-            //Displays information about each individual Play Event
             if (endTime == "")
                 endTime = startTime;
-            //Console.WriteLine("Start Time: {0} \nEnd Time: {1}", startTime, endTime);
-
-            //if (startTime != "" && endTime != "")
-            //{
-            //    ts = getDurationOfPlayEvent(startTime, endTime);
-            //    Console.WriteLine("Total Duration: {0} secs", ts.TotalSeconds);
-            //    //Console.WriteLine("Day(s): " + ts.Days);  //Time in days
-            //}
-
             ts = getDurationOfPlayEvent(startTime, endTime);
 
-            //Console.WriteLine("EventID: " + generatePlayEventId(attr));
+            content.Add(new Content { menuCategory = titleCategory, menuGenre = titleGenre, duration = ts.TotalSeconds.ToString(), start = startTime});
+
             //Console.WriteLine("");
+        }
 
-            el.add(startTime, endTime, ts.TotalSeconds, generatePlayEventId(attr));
-            //el.printList();
 
-            Contents c = new Contents();
-            c.passThroughNodes(el);
-
-            //foreach (string s in c.getFields())
-            //{
-            //    Console.WriteLine(s);
-            //}
-
-            Console.WriteLine("");
+        public static string[] seperateTitle(string title)
+        {
+            if (title != null)
+                return title.Split('/');
+            else
+                return null;
         }
 
         public static TimeSpan getDurationOfPlayEvent(string startTime, string endTime)
@@ -174,6 +167,13 @@ namespace XmlParserThing
             return duration;
         }
 
+        public static TimeSpan getTotalTimePlayed(string playtime)
+        {
+            TimeSpan totalTimePlayed = new TimeSpan();
+
+            return totalTimePlayed;
+        }
+
         public static string generatePlayEventId(string attr)
         {
             string id;
@@ -182,7 +182,7 @@ namespace XmlParserThing
             return id;
         }
 
-        public static void tabDelimit(string filePath, string attr, EventList el, FileStream fs)
+        public static void tabDelimit(string filePath, string attr, FileStream fs)
         {
             //var path = "C:/Users/Shaun/Desktop/output.txt"; 
             StreamWriter sw;
@@ -198,104 +198,160 @@ namespace XmlParserThing
             }
 
             File.AppendAllText(filePath + fileName, attr + "\r\n");
-            File.AppendAllText(filePath + fileName, el.collateValues());
             File.AppendAllText(filePath + fileName, "\r\n");
         }
     }
 
-    public class Node
+    public class PlayLog
     {
-        public Node next;
-        public object startTime;
-        public object endTime;
-        public object duration;
-        public object eventID;
-    }
+        List<Content> content;
 
-    public class EventList
-    {
-        private Node head;
-        private Node current;
-        public int count;
+        private XmlTextReader reader;
+        private PlayEvent playEvent;
 
-        public EventList()
+        private string title;
+        private string UID;
+        private string airline;
+        private string contentSet;
+
+        public PlayLog(XmlTextReader reader)
         {
-            head = new Node();
-            current = head;
+            content = new List<Content>();
+
+            this.reader = reader;
+            playEvent = new PlayEvent(reader);
         }
 
-        public void add(Object startTime, Object endTime, Object duration, Object eventID)
+        public void processPlayEvent()
         {
-            Node newNode = new Node();
-            newNode.startTime = startTime;
-            newNode.endTime = endTime;
-            newNode.duration = duration;
-            newNode.eventID = eventID;
-            current.next = newNode;
-            current = newNode;
-            count++;
+            string title;
+            string attribute;
+
+            //List<Content> c = new List<Content>();
+
+            Console.WriteLine(sqr(playEvent.returnFive()));
+
+            content.Add(new Content { menuCategory = "Movie", menuGenre = "Horror", duration = "1600" });
+            content.Add(new Content { menuCategory = "Music", menuGenre = "R&B", duration = "186" });
+
+            //Console.WriteLine(getContent(content));
+
         }
 
         public void printList()
         {
-            Node curr = head.next;
-            while (curr != null)
+            foreach (Content c in content)
             {
-                //curr = curr.next;
-                Console.WriteLine("Start Time: {0}\nEnd Time: {1}\nDuration: {2} secs\nEventID: {3}", curr.startTime, curr.endTime, curr.duration, curr.eventID);
-                curr = curr.next;
+                Console.WriteLine(c);
             }
         }
 
-        public string collateValues()
+        public static string[] seperateTitle(string title)
         {
-            Node curr = head.next;
-
-            string values;
-            string joinedText;
-            string delimiter = "\t";
-
-            while (curr != null)
-            {
-                values = string.Format($"{curr.startTime.ToString()}\t{curr.endTime.ToString()}\t{curr.duration.ToString()}\t{curr.eventID}\r\n");
-
-                return values;
-            }
-
-           return string.Empty; 
+            if (title != null)
+                return title.Split('/');
+            else
+                return null;
         }
+
+        public int sqr(int num)
+        {
+            return num * num; 
+        }
+
+        //public static TimeSpan getDurationOfLog()
+        //{ }
+
+        //public static
+
     }
 
-    public class Contents
+    public class PlayEvent
     {
-        public string[] fields = new string[21];
-        public string[] Fields
+        private XmlTextReader reader;
+
+        public PlayEvent(XmlTextReader reader)
         {
-            get { return fields; }
-            set { fields = value; }
+            this.reader = reader;
         }
 
-        public void insert(int index, string val)
+        public void printPlayEvent()
         {
-            fields[index] = val;
-        }
+            Console.WriteLine("Working");
 
-        public string [] getFields()
-        {
-            return fields;
-        }
-
-        public void passThroughNodes(EventList el)
-        {
-            el.printList(); //Test call to see where exactly when and how this method operates
-            for (int i = 0; i < fields.Length; i++)
+            while (reader.Read())
             {
-                fields[i] = i.ToString();
+                if (reader.Name.Equals("playEvent"))
+                {
+                    Console.WriteLine(reader.GetAttribute("type"));
+                    reader.Read();
+                }
+                else
+                {
+                    reader.Skip();
+                }
             }
-            
         }
+
+        public int returnFive()
+        {
+            return 5;
+        }
+
+
+
     }
 
+    public class Content : IEquatable<Content>
+    {
+        public string menuCategory { get; set; }        
+        public string menuGenre { get; set; }           
+        public string artistAlbum { get; set; }         
+        public string title { get; set; }               
+        public string start { get; set; }               
+        public string duration { get; set; }            
+        public string deviceName { get; set; }          
+        public string UDID { get; set; }
+        public string airline { get; set; }
+        public string contentSet { get; set; }
+        public string flightNumber { get; set; }
+        public string totalTimePaused { get; set; }
+        public string totalTimePlayed { get; set; }
+        public string expectedDuration { get; set; }
+        public bool flightExpired { get; set; }
+        public string marketingSequence { get; set; }
+        public string marketingStingerID { get; set; }
+        public string sessionID { get; set; }
+        public string seriesIdentifier { get; set; }
+        public string topPick { get; set; }
+        public string paymentType { get; set; }
 
-    
+        public override string ToString()
+        {
+            return string.Format($"{menuCategory}\t{menuGenre}\t{artistAlbum}\t{title}\t{start}\t{duration}\t{deviceName}\t{UDID}\t{airline}\t{contentSet}\t{flightNumber}\t{totalTimePaused}\t{totalTimePlayed}\t{expectedDuration}\t{flightExpired.ToString()}\t{marketingSequence}\t{marketingStingerID}\t{sessionID}\t{seriesIdentifier}\t{topPick}\t{paymentType}");
+        }
+
+        public override bool Equals(object obj)
+        {
+            if (obj == null)
+                return false;
+            Content objAsContent = obj as Content;
+            if (objAsContent == null)
+                return false;
+            else
+                return Equals(objAsContent);
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode(); 
+        }
+
+        public bool Equals(Content other)
+        {
+            if (other == null)
+                return false;
+            return (this.sessionID.Equals(other.sessionID));
+        }
+    }
 }
