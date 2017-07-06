@@ -19,16 +19,28 @@ namespace XmlParserThing
 
             try
             {
-                if (File.Exists("C:/Users/sfalconer/Desktop/generic.txt"))
-                    File.Delete("C:/Users/sfalconer/Desktop/generic.txt"); //Temporary deletion of the file to start with clean slate
-                Console.WriteLine(aircraftId);
-                Console.WriteLine("");
                 XmlTextReader reader = new XmlTextReader("FlightLogs.xml");
-                //ProcessLogs(reader);
-                PlayLog p = new PlayLog(reader);
-                p.processPlayEvent();
-                p.printList();
 
+                List<Content> content = new List<Content>();
+                //PlayLog p = new PlayLog(reader, content);
+
+                while (reader.Read())//&& reader.NodeType != XmlNodeType.EndElement)
+                {
+                    if (reader.Name.Equals("PlayLog") )//&& reader.NodeType != XmlNodeType.EndElement)
+                    {
+                        if (reader.NodeType != XmlNodeType.EndElement)
+                        {
+                            PlayLog p = new PlayLog(reader, content);
+                            p.processPlayLog();
+                        }
+                    }
+                }
+
+                foreach(Content c in content)
+                {
+                    Console.WriteLine(c);
+                    Console.WriteLine("");
+                }
             }
             catch (XmlException xe)
             {   
@@ -43,6 +55,10 @@ namespace XmlParserThing
 
         public static void writeToFile()
         {
+
+
+            if (File.Exists("C:/Users/sfalconer/Desktop/generic.txt"))
+                File.Delete("C:/Users/sfalconer/Desktop/generic.txt"); //Temporary deletion of the file to start with clean slate
         }
 
         static void ProcessLogs(XmlTextReader reader)
@@ -103,9 +119,9 @@ namespace XmlParserThing
             string totalPlayed;
             string totalPaused;
                     
-            contentTitle = seperateTitle(title);
-            titleCategory = contentTitle[0];
-            titleGenre = contentTitle[1];
+            //contentTitle = seperateTitle(title);
+            //titleCategory = contentTitle[0];
+            //titleGenre = contentTitle[1];
 
             while (reader.NodeType != XmlNodeType.EndElement &&
                 reader.Read())
@@ -139,18 +155,9 @@ namespace XmlParserThing
                 endTime = startTime;
             ts = getDurationOfPlayEvent(startTime, endTime);
 
-            content.Add(new Content { menuCategory = titleCategory, menuGenre = titleGenre, duration = ts.TotalSeconds.ToString(), start = startTime});
+            //content.Add(new Content { menuCategory = titleCategory, menuGenre = titleGenre, duration = ts.TotalSeconds.ToString(), start = startTime});
 
             //Console.WriteLine("");
-        }
-
-
-        public static string[] seperateTitle(string title)
-        {
-            if (title != null)
-                return title.Split('/');
-            else
-                return null;
         }
 
         public static TimeSpan getDurationOfPlayEvent(string startTime, string endTime)
@@ -172,14 +179,6 @@ namespace XmlParserThing
             TimeSpan totalTimePlayed = new TimeSpan();
 
             return totalTimePlayed;
-        }
-
-        public static string generatePlayEventId(string attr)
-        {
-            string id;
-            id = attr.Substring(0, 3) + "-" + Guid.NewGuid().ToString().Replace("-", string.Empty).Substring(0, 4);
-
-            return id;
         }
 
         public static void tabDelimit(string filePath, string attr, FileStream fs)
@@ -205,74 +204,107 @@ namespace XmlParserThing
     public class PlayLog
     {
         List<Content> content;
-
         private XmlTextReader reader;
         private PlayEvent playEvent;
 
         private string title;
+        private string [] titleSplit;
+        private string menuCategory;
+        private string menuGenre;
+
         private string UID;
         private string airline;
         private string contentSet;
 
-        public PlayLog(XmlTextReader reader)
-        {
-            content = new List<Content>();
+        private string attribute;
 
+        public PlayLog(XmlTextReader reader, List<Content> content)
+        {
+            this.content = content;
             this.reader = reader;
             playEvent = new PlayEvent(reader);
         }
 
-        public void processPlayEvent()
+        public void processPlayLog()
         {
-            string title;
-            string attribute;
+            title = reader.GetAttribute("navigationPath");
+            titleSplit = seperateTitle(title);
+            menuCategory = titleSplit[0];
+            menuGenre = titleSplit[1];
 
-            //List<Content> c = new List<Content>();
+            Console.WriteLine("tester");
 
-            Console.WriteLine(sqr(playEvent.returnFive()));
-
-            content.Add(new Content { menuCategory = "Movie", menuGenre = "Horror", duration = "1600" });
-            content.Add(new Content { menuCategory = "Music", menuGenre = "R&B", duration = "186" });
-
-            //Console.WriteLine(getContent(content));
-
-        }
-
-        public void printList()
-        {
-            foreach (Content c in content)
+            while (reader.Read()) //ADD CONDITIONAL HERE)
             {
-                Console.WriteLine(c);
+                Console.WriteLine(reader.ReadString());
+                if (reader.Name.Equals("playEvent") && reader.NodeType != XmlNodeType.EndElement)
+                {
+                    Console.WriteLine(reader.GetAttribute("type"));
+
+                    //Console.WriteLine(reader.ReadString());
+
+                    //playEvent.processPlayEvent();
+                    //reader.Read();
+                }
+                else if (reader.Name.Equals("playEvents") && reader.NodeType == XmlNodeType.EndElement)
+                {
+                    Console.WriteLine("End of PlayLog\r\n");
+                    break;
+                }
             }
+            //playEvent.processPlayEvent();
+            content.Add(new Content { menuCategory = menuCategory, menuGenre = menuGenre, artistAlbum = "Test", start = playEvent.getStartTime().ToString() });
+            //Console.WriteLine(playEvent.getStartTime());
         }
 
-        public static string[] seperateTitle(string title)
+        public string[] seperateTitle(string title)
         {
             if (title != null)
                 return title.Split('/');
             else
                 return null;
         }
-
-        public int sqr(int num)
-        {
-            return num * num; 
-        }
-
-        //public static TimeSpan getDurationOfLog()
-        //{ }
-
-        //public static
-
     }
 
     public class PlayEvent
     {
         private XmlTextReader reader;
 
+        public DateTime startTime { get; set; }
+        public DateTime endTime { get; set; }
+
+        public string totalTimePlayed { get; set; }
+        public string totalTimePaused { get; set; }
+
+        int test;
+
         public PlayEvent(XmlTextReader reader)
         {
             this.reader = reader;
+            test = 0;
+        }
+
+        public void processPlayEvent()
+        {
+            //while (reader.Read())
+            //{
+            //    if (reader.Name.Equals("playEvent"))
+            //    {
+            //        Console.WriteLine("Play Event");
+            //    }
+            //    else if (!reader.Name.Equals("playEvent") && reader.NodeType != XmlNodeType.EndElement)
+            //    {
+            //        break;
+            //    }
+            //}
+
+            Console.WriteLine("Play Event");
+
+        }
+
+        public DateTime getStartTime()
+        {
+            return startTime;
         }
 
         public void printPlayEvent()
@@ -292,13 +324,6 @@ namespace XmlParserThing
                 }
             }
         }
-
-        public int returnFive()
-        {
-            return 5;
-        }
-
-
 
     }
 
