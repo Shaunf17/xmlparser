@@ -1,13 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Xml;
-using System.Xml.Serialization;
 using System.IO;
-using System.Data;
-using System.Reflection;
 
 namespace XmlParserThing
 {
@@ -17,10 +11,27 @@ namespace XmlParserThing
         {
             try
             {
-                XmlTextReader reader = new XmlTextReader("FlightLog3.xml");
+                XmlTextReader reader = new XmlTextReader("NewLog.xml");
+
+                //XmlTextReader reader = new XmlTextReader(@"C:\Users\sfalconer\Downloads\PlayEvents\PlayEvents\PlayEvent 13-Oct-2016 1800.txt");
 
                 List<Content> content = new List<Content>();
-                //PlayLog p = new PlayLog(reader, content);
+
+                string path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\FlightLogs\";
+                Console.WriteLine(path);
+                createDirectory(path);
+
+                string test1 = "";
+
+                if (test1 == "")
+                {
+                    Console.WriteLine(" '' working ");
+                }
+
+                if (test1 == string.Empty)
+                {
+                    Console.WriteLine("String.empty working");
+                }
 
                 while (reader.Read())//&& reader.NodeType != XmlNodeType.EndElement)
                 {
@@ -34,15 +45,15 @@ namespace XmlParserThing
                     }
                 }
 
-                if (File.Exists("C:/Users/sfalconer/Desktop/parsed.txt"))
-                    File.Delete("C:/Users/sfalconer/Desktop/parsed.txt");
-
                 foreach (Content c in content)
                 {
                     Console.WriteLine(c);
                     Console.WriteLine("");
-                    writeToFile(c);
+                    writeToFile(c, path);
                 }
+
+                var last = content[content.Count - 1];
+                Console.WriteLine("LAST ENTRY START TIME: " + last.start);
             }
             catch (XmlException xe)
             {
@@ -55,17 +66,33 @@ namespace XmlParserThing
             Console.ReadKey();
         }
 
-        public static void writeToFile(Content c)
+        public static void createDirectory(string path)
         {
-            string path = "C:/Users/sfalconer/Desktop/parsed.txt";
-            //FileStream fs = new FileStream(path, FileMode.Append);
+            try
+            {
+                if (Directory.Exists(path))
+                {
+                    return;
+                }
 
-            //File.WriteAllText(path, c.ToString());
-
-            File.AppendAllText(path, c.ToString());
-            File.AppendAllText(path, "\r\n");
+                DirectoryInfo di = Directory.CreateDirectory(path);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.ToString());
+            }
         }
 
+        public static void writeToFile(Content c, string path)
+        {
+            DateTime now = DateTime.Now;
+            string timestamp = now.ToString("dd-MMM-yyyy_HH-mm-ss");
+
+            Console.WriteLine(path + timestamp + ".log");
+
+            File.AppendAllText(path + "WOW_" + timestamp + ".log", c.ToString());
+            File.AppendAllText(path + "WOW_" + timestamp + ".log", "\r\n");
+        }
     }
 
     public class PlayLog
@@ -98,7 +125,8 @@ namespace XmlParserThing
         public void processPlayLog()
         {
             title = reader.GetAttribute("navigationPath");
-            if (title != "")
+
+            if (title != null)
             {
                 titleSplit = seperateTitle(title);
                 menuCategory = titleSplit[0];
@@ -114,7 +142,8 @@ namespace XmlParserThing
 
             while (reader.Read()) //ADD CONDITIONAL HERE)
             {
-                if (reader.Name.Equals("playEvent"))
+                if (reader.Name.Equals("playEvent") || 
+                    reader.Name.Equals("PlayEvent"))
                 {
                     if (reader.NodeType != XmlNodeType.EndElement)
                     {
@@ -122,7 +151,9 @@ namespace XmlParserThing
                         playEvent.processPlayEvent();
                     }
                 }
-                else if (reader.Name.Equals("playEvents") && reader.NodeType == XmlNodeType.EndElement)
+                else if ((reader.Name.Equals("playEvents") || 
+                    reader.Name.Equals("PlayEvent")) && 
+                    reader.NodeType == XmlNodeType.EndElement)
                 {
                     Console.WriteLine("End of PlayLog\r\n");
                     break;
@@ -134,10 +165,10 @@ namespace XmlParserThing
 
         public string[] seperateTitle(string title)
         {
-            if (title != null)
+            if (title != "")
                 return title.Split('/');
             else
-                return null;
+            { title = "N/A,N/A,N/A"; return title.Split(','); }
         }
         public TimeSpan getDurationOfLog(DateTime startTime, DateTime endTime)
         {
@@ -210,8 +241,6 @@ namespace XmlParserThing
                 }
             }
             playEventDuration(startHolder, endHolder, flag);
-            //Console.WriteLine("Time Played: " + totalTimePlayed);
-            //Console.WriteLine("Time Paused: " + totalTimePaused);
             Console.WriteLine("");
         }
 

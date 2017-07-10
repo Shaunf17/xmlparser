@@ -1,0 +1,190 @@
+<?xml version="1.0"?>
+<ArrayOfPlayLogXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PlayLogXml>
+    <PlayLogXml>
+      <PlayLog version="iOS 1.13.431" navigationPath="Movies/The Wolverine" platform="iPhone6,2">
+        <item filename="The_Wolverine.smil">
+          <playEvents>
+            <playEvent type="Play">
+              <currentlyBufferingBitRate>757232</currentlyBufferingBitRate>
+              <startTime>2016_10_13 16:31:52</startTime>
+              <endTime>2016_10_13 16:31:52</endTime>
+            </playEvent>
+            <playEvent type="Play">
+              <currentlyBufferingBitRate>1507952</currentlyBufferingBitRate>
+              <startTime>2016_10_13 16:31:52</startTime>
+              <endTime>2016_10_13 16:33:16</endTime>
+            </playEvent>
+            <playEvent type="Entered Background">
+              <startTime>2016_10_13 16:33:16</startTime>
+              <reason>User pressed home or power button</reason>
+            </playEvent>
+            <playEvent type="Returned From Background">
+              <startTime>2016_10_13 16:33:18</startTime>
+            </playEvent>
+            <playEvent type="Play">
+              <currentlyBufferingBitRate>1507952</currentlyBufferingBitRate>
+              <startTime>2016_10_13 16:33:23</startTime>
+              <endTime>2016_10_13 17:11:52</endTime>
+            </playEvent>
+            <playEvent type="Entered Background">
+              <startTime>2016_10_13 17:11:52</startTime>
+              <reason>User pressed home or power button</reason>
+            </playEvent>
+            <playEvent type="Returned From Background">
+              <startTime>2016_10_13 17:11:55</startTime>
+            </playEvent>
+            <playEvent type="Play">
+              <currentlyBufferingBitRate>1507952</currentlyBufferingBitRate>
+              <startTime>2016_10_13 17:11:59</startTime>
+              <endTime>2016_10_13 17:35:23</endTime>
+            </playEvent>
+            <playEvent type="Pause">
+              <startTime>2016_10_13 17:35:23</startTime>
+              <reason>User or PA Pause</reason>
+              <endTime>2016_10_13 17:36:18</endTime>
+            </playEvent>
+            <playEvent type="Play">
+              <currentlyBufferingBitRate>1507952</currentlyBufferingBitRate>
+              <startTime>2016_10_13 17:36:18</startTime>
+              <endTime>2016_10_13 18:27:21</endTime>
+            </playEvent>
+            <playEvent type="Ended">
+              <reason>User Ended</reason>
+              <startTime>2016_10_13 18:27:21</startTime>
+            </playEvent>
+          </playEvents>
+        </item>
+      </PlayLog>
+    </PlayLogXml>
+  </PlayLogXml>
+  <PlayLogXml>
+    <PlayLogXml>
+      <PlayLog version="iOS 1.13.431" navigationPath="TV/The Big Bang Theory" platform="iPhone7,1">
+        <item filename="The_Big_Bang_Theory_S5_E1.smil">
+          <playEvents>
+            <playEvent type="Play">
+              <currentlyBufferingBitRate>757120</currentlyBufferingBitRate>
+              <startTime>2016_10_13 18:14:37</startTime>
+              <endTime>2016_10_13 18:14:37</endTime>
+            </playEvent>
+            <playEvent type="Play">
+              <currentlyBufferingBitRate>1507696</currentlyBufferingBitRate>
+              <startTime>2016_10_13 18:14:37</startTime>
+              <endTime>2016_10_13 18:15:32</endTime>
+            </playEvent>
+            <playEvent type="Entered Background">
+              <startTime>2016_10_13 18:15:32</startTime>
+              <reason>User pressed home or power button</reason>
+            </playEvent>
+            <playEvent type="App Terminated">
+              <startTime>2016_10_13 18:45:28</startTime>
+              <reason>App force quit by user or device turned off</reason>
+            </playEvent>
+          </playEvents>
+        </item>
+      </PlayLog>
+    </PlayLogXml>
+  </PlayLogXml>
+  <PlayLogXml>
+    <PlayLogXml>
+      <PlayLog version="Android 1.1.238" navigationPath="Movies/The Bucket List" platform="device osprey_u2, model MotoG3, product osprey_reteu_2gb, brand motorola" DevideId="motorola/osprey_reteu_2gb/osprey_u2:6.0.1/MPI24.107-55/33:user/release-keys" osVersion="23">
+        <item filename="The_Bucket_List.smil">
+          <playEvents>
+            <playEvent type="Ended">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_13 06:48:38</startTime>
+              <endTime>2016_10_13 06:48:38</endTime>
+              <reason>DRM INFORMATION FAILED
+WVLastErrorKey = CA CGI Response code = 44
+DRM INFO WVPortalKey = aviitbluebox
+DRM INFO WVDRMServerKey = https://www.blueboxinflight.com/widevine/cypherpc/cgi-bin/GetEMMs.cgi
+DRM INFO WVDeviceIDKey = 172.16.0.134
+DRM INFO WVAssetURIKey = widevine://www.blueboxinflight.com/wvvm/The_Bucket_List2/The_Bucket_List_English.wvm</reason>
+            </playEvent>
+          </playEvents>
+        </item>
+      </PlayLog>
+    </PlayLogXml>
+  </PlayLogXml>
+  <PlayLogXml>
+    <PlayLogXml>
+      <PlayLog version="Android 1.1.238" navigationPath="Movies/De LEGO film" platform="device osprey_u2, model MotoG3, product osprey_reteu_2gb, brand motorola" DevideId="motorola/osprey_reteu_2gb/osprey_u2:6.0.1/MPI24.107-55/33:user/release-keys" osVersion="23">
+        <item filename="The_Lego_Movie.smil">
+          <playEvents>
+            <playEvent type="Ended">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_13 06:49:35</startTime>
+              <endTime>2016_10_13 06:49:35</endTime>
+              <reason>DRM INFORMATION FAILED
+WVLastErrorKey = CA CGI Response code = 44
+DRM INFO WVPortalKey = aviitbluebox
+DRM INFO WVDRMServerKey = https://www.blueboxinflight.com/widevine/cypherpc/cgi-bin/GetEMMs.cgi
+DRM INFO WVDeviceIDKey = 172.16.0.134
+DRM INFO WVAssetURIKey = widevine://www.blueboxinflight.com/wvvm/The_Lego_Movie2/The_Lego_Movie_Dutch3.wvm</reason>
+            </playEvent>
+          </playEvents>
+        </item>
+      </PlayLog>
+    </PlayLogXml>
+  </PlayLogXml>
+  <PlayLogXml>
+    <PlayLogXml>
+      <PlayLog version="Android 1.1.238" navigationPath="Movies/De LEGO film" platform="device osprey_u2, model MotoG3, product osprey_reteu_2gb, brand motorola" DevideId="motorola/osprey_reteu_2gb/osprey_u2:6.0.1/MPI24.107-55/33:user/release-keys" osVersion="23">
+        <item filename="The_Lego_Movie.smil">
+          <playEvents>
+            <playEvent type="Ended">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_13 06:50:57</startTime>
+              <endTime>2016_10_13 06:50:57</endTime>
+              <reason>DRM INFORMATION FAILED
+WVLastErrorKey = CA CGI Response code = 44
+DRM INFO WVPortalKey = aviitbluebox
+DRM INFO WVDRMServerKey = https://www.blueboxinflight.com/widevine/cypherpc/cgi-bin/GetEMMs.cgi
+DRM INFO WVDeviceIDKey = 172.16.0.134
+DRM INFO WVAssetURIKey = widevine://www.blueboxinflight.com/wvvm/The_Lego_Movie2/The_Lego_Movie_English2.wvm</reason>
+            </playEvent>
+          </playEvents>
+        </item>
+      </PlayLog>
+    </PlayLogXml>
+  </PlayLogXml>
+  <PlayLogXml>
+    <PlayLogXml>
+      <PlayLog version="iOS 1.13.431" navigationPath="TV/Gotham" platform="iPhone7,2">
+        <item filename="Gotham_S1_E1.smil">
+          <playEvents>
+            <playEvent type="Play">
+              <currentlyBufferingBitRate>757208</currentlyBufferingBitRate>
+              <startTime>2016_10_13 18:52:43</startTime>
+              <endTime>2016_10_13 18:52:43</endTime>
+            </playEvent>
+            <playEvent type="Play">
+              <currentlyBufferingBitRate>1506952</currentlyBufferingBitRate>
+              <startTime>2016_10_13 18:52:43</startTime>
+              <endTime>2016_10_13 18:53:00</endTime>
+            </playEvent>
+            <playEvent type="Subtitles Selected">
+              <startTime>2016_10_13 18:53:00</startTime>
+              <Language>Dutch</Language>
+            </playEvent>
+            <playEvent type="Play">
+              <currentlyBufferingBitRate>1506952</currentlyBufferingBitRate>
+              <startTime>2016_10_13 18:53:00</startTime>
+              <endTime>2016_10_13 18:56:23</endTime>
+            </playEvent>
+            <playEvent type="Pause">
+              <startTime>2016_10_13 18:56:23</startTime>
+              <reason>User or PA Pause</reason>
+              <endTime>2016_10_13 18:56:27</endTime>
+            </playEvent>
+            <playEvent type="Ended">
+              <reason>User Ended</reason>
+              <startTime>2016_10_13 18:56:27</startTime>
+            </playEvent>
+          </playEvents>
+        </item>
+      </PlayLog>
+    </PlayLogXml>
+  </PlayLogXml>
+</ArrayOfPlayLogXml>

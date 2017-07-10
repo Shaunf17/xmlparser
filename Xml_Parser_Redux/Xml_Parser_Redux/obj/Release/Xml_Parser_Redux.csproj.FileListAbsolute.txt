@@ -1,0 +1,9 @@
+C:\Users\sfalconer\documents\visual studio 2015\Projects\Xml_Parser_Redux\Xml_Parser_Redux\bin\Release\Xml_Parser_Redux.exe.config
+C:\Users\sfalconer\documents\visual studio 2015\Projects\Xml_Parser_Redux\Xml_Parser_Redux\bin\Release\books.xml
+C:\Users\sfalconer\documents\visual studio 2015\Projects\Xml_Parser_Redux\Xml_Parser_Redux\bin\Release\FlightLog2.xml
+C:\Users\sfalconer\documents\visual studio 2015\Projects\Xml_Parser_Redux\Xml_Parser_Redux\bin\Release\FlightLogs.xml
+C:\Users\sfalconer\documents\visual studio 2015\Projects\Xml_Parser_Redux\Xml_Parser_Redux\bin\Release\FlightLog3.xml
+C:\Users\sfalconer\documents\visual studio 2015\Projects\Xml_Parser_Redux\Xml_Parser_Redux\bin\Release\Xml_Parser_Redux.exe
+C:\Users\sfalconer\documents\visual studio 2015\Projects\Xml_Parser_Redux\Xml_Parser_Redux\bin\Release\Xml_Parser_Redux.pdb
+C:\Users\sfalconer\documents\visual studio 2015\Projects\Xml_Parser_Redux\Xml_Parser_Redux\obj\Release\Xml_Parser_Redux.exe
+C:\Users\sfalconer\documents\visual studio 2015\Projects\Xml_Parser_Redux\Xml_Parser_Redux\obj\Release\Xml_Parser_Redux.pdb
