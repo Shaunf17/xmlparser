@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PlayLog platform="Browser">
+  <item filename="Sintel">
+    <playEvents>
+      <PlayEvent type="Seeking">
+        <startTime>2017_06_16 08:24:22</startTime>
+        <currentlyBufferingBitRate>1149</currentlyBufferingBitRate>
+      </PlayEvent>
+      <PlayEvent type="Pause">
+        <startTime>2017_06_16 08:24:33</startTime>
+        <currentlyBufferingBitRate>1149</currentlyBufferingBitRate>
+      </PlayEvent>
+      <PlayEvent type="Play">
+        <startTime>2017_06_16 08:24:49</startTime>
+        <currentlyBufferingBitRate>1149</currentlyBufferingBitRate>
+      </PlayEvent>
+      <PlayEvent type="Pause">
+        <startTime>2017_06_16 08:24:59</startTime>
+        <currentlyBufferingBitRate>1149</currentlyBufferingBitRate>
+      </PlayEvent>
+      <PlayEvent type="Seeking">
+        <startTime>2017_06_16 08:25:00</startTime>
+        <currentlyBufferingBitRate>1149</currentlyBufferingBitRate>
+      </PlayEvent>
+      <PlayEvent type="Play">
+        <startTime>2017_06_16 08:25:01</startTime>
+        <currentlyBufferingBitRate>1149</currentlyBufferingBitRate>
+      </PlayEvent>
+      <PlayEvent type="Subtitles Selected">
+        <startTime>2017_06_16 08:25:15</startTime>
+        <currentlyBufferingBitRate>1149</currentlyBufferingBitRate>
+      </PlayEvent>
+      <PlayEvent type="Pause">
+        <startTime>2017_06_16 08:25:45</startTime>
+        <currentlyBufferingBitRate>1149</currentlyBufferingBitRate>
+      </PlayEvent>
+      <PlayEvent type="Play">
+        <startTime>2017_06_16 08:25:47</startTime>
+        <currentlyBufferingBitRate>1149</currentlyBufferingBitRate>
+      </PlayEvent>
+      <PlayEvent type="Pause">
+        <startTime>2017_06_16 08:25:48</startTime>
+        <currentlyBufferingBitRate>1149</currentlyBufferingBitRate>
+      </PlayEvent>
+      <PlayEvent type="Seeking">
+        <startTime>2017_06_16 08:25:51</startTime>
+        <currentlyBufferingBitRate>1149</currentlyBufferingBitRate>
+      </PlayEvent>
+      <PlayEvent type="Play">
+        <startTime>2017_06_16 08:25:51</startTime>
+        <currentlyBufferingBitRate>1149</currentlyBufferingBitRate>
+      </PlayEvent>
+      <PlayEvent type="Pause">
+        <startTime>2017_06_16 08:26:00</startTime>
+        <currentlyBufferingBitRate>1149</currentlyBufferingBitRate>
+      </PlayEvent>
+    </playEvents>
+  </item>
+</PlayLog>

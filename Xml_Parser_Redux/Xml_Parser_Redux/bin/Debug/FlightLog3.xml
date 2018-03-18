@@ -1,0 +1,535 @@
+<?xml version="1.0"?>
+<ArrayOfPlayLogXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PlayLogXml>
+    <PlayLogXml>
+      <PlayLog version="iOS 1.13.431" navigationPath="Movies/Dr Seuss' Horton Hears a Who" platform="iPhone8,1">
+        <item filename="Dr_Seuss_Horton_Hears_a_Who.smil">
+          <playEvents>
+            <playEvent type="Play">
+              <currentlyBufferingBitRate>757344</currentlyBufferingBitRate>
+              <startTime>2016_10_13 16:37:49</startTime>
+              <endTime>2016_10_13 16:37:50</endTime>
+            </playEvent>
+            <playEvent type="Widevine Stopping On Error">
+              <startTime>2016_10_13 16:37:50</startTime>
+              <reason>Mpeg2PsParser error 8</reason>
+            </playEvent>
+            <playEvent type="Play">
+              <currentlyBufferingBitRate>757344</currentlyBufferingBitRate>
+              <startTime>2016_10_13 16:37:50</startTime>
+              <endTime>2016_10_13 16:37:57</endTime>
+            </playEvent>
+            <playEvent type="Seeking">
+              <startTime>2016_10_13 16:37:57</startTime>
+              <endTime>2016_10_13 16:37:57</endTime>
+            </playEvent>
+            <playEvent type="Play">
+              <currentlyBufferingBitRate>757344</currentlyBufferingBitRate>
+              <startTime>2016_10_13 16:38:09</startTime>
+              <endTime>2016_10_13 16:38:10</endTime>
+            </playEvent>
+            <playEvent type="Play">
+              <currentlyBufferingBitRate>1508688</currentlyBufferingBitRate>
+              <startTime>2016_10_13 16:38:10</startTime>
+              <endTime>2016_10_13 16:38:57</endTime>
+            </playEvent>
+            <playEvent type="Entered Background">
+              <startTime>2016_10_13 16:38:57</startTime>
+              <reason>User pressed home or power button</reason>
+            </playEvent>
+            <playEvent type="Returned From Background">
+              <startTime>2016_10_13 16:39:02</startTime>
+            </playEvent>
+            <playEvent type="Play">
+              <currentlyBufferingBitRate>1508688</currentlyBufferingBitRate>
+              <startTime>2016_10_13 16:39:05</startTime>
+              <endTime>2016_10_13 16:40:39</endTime>
+            </playEvent>
+            <playEvent type="Pause">
+              <startTime>2016_10_13 16:40:39</startTime>
+              <reason>User or PA Pause</reason>
+              <endTime>2016_10_13 16:40:44</endTime>
+            </playEvent>
+            <playEvent type="Seeking">
+              <startTime>2016_10_13 16:40:44</startTime>
+              <endTime>2016_10_13 16:40:44</endTime>
+            </playEvent>
+            <playEvent type="Play">
+              <currentlyBufferingBitRate>1508688</currentlyBufferingBitRate>
+              <startTime>2016_10_13 16:40:45</startTime>
+              <endTime>2016_10_13 16:40:45</endTime>
+            </playEvent>
+            <playEvent type="Pause">
+              <startTime>2016_10_13 16:40:45</startTime>
+              <reason>User or PA Pause</reason>
+              <endTime>2016_10_13 16:40:46</endTime>
+            </playEvent>
+            <playEvent type="Play">
+              <currentlyBufferingBitRate>1508688</currentlyBufferingBitRate>
+              <startTime>2016_10_13 16:40:46</startTime>
+              <endTime>2016_10_13 16:41:01</endTime>
+            </playEvent>
+            <playEvent type="Pause">
+              <startTime>2016_10_13 16:41:01</startTime>
+              <reason>Headphones Removed</reason>
+              <endTime>2016_10_13 16:41:09</endTime>
+            </playEvent>
+            <playEvent type="Play">
+              <currentlyBufferingBitRate>1508688</currentlyBufferingBitRate>
+              <startTime>2016_10_13 16:41:09</startTime>
+              <endTime>2016_10_13 16:41:25</endTime>
+            </playEvent>
+            <playEvent type="Entered Background">
+              <startTime>2016_10_13 16:41:25</startTime>
+              <reason>User pressed home or power button</reason>
+            </playEvent>
+            <playEvent type="Returned From Background">
+              <startTime>2016_10_13 17:02:16</startTime>
+            </playEvent>
+            <playEvent type="Ended">
+              <reason>RequestDidTimeout</reason>
+              <startTime>2016_10_13 17:02:16</startTime>
+            </playEvent>
+            <playEvent type="User Retry">
+              <startTime>2016_10_13 17:02:18</startTime>
+            </playEvent>
+            <playEvent type="Ended">
+              <reason>RequestDidTimeout</reason>
+              <startTime>2016_10_13 17:02:19</startTime>
+            </playEvent>
+            <playEvent type="Entered Background">
+              <startTime>2016_10_13 17:02:20</startTime>
+              <reason>User pressed home or power button</reason>
+            </playEvent>
+            <playEvent type="Returned From Background">
+              <startTime>2016_10_13 17:02:42</startTime>
+            </playEvent>
+            <playEvent type="Ended">
+              <reason>User Ended By Cancelling Load</reason>
+              <startTime>2016_10_13 17:02:46</startTime>
+            </playEvent>
+          </playEvents>
+        </item>
+      </PlayLog>
+    </PlayLogXml>
+  </PlayLogXml>
+  <PlayLogXml>
+    <PlayLogXml>
+      <PlayLog version="Android 1.1.238" navigationPath="TV/Science of Stupid" platform="device osprey_u2, model MotoG3, product osprey_reteu_2gb, brand motorola" DevideId="motorola/osprey_reteu_2gb/osprey_u2:6.0.1/MPI24.107-55/33:user/release-keys" osVersion="23">
+        <item filename="Science_of_Stupid_S1_E2.smil">
+          <playEvents>
+            <playEvent type="Ended">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_13 05:04:56</startTime>
+              <endTime>2016_10_13 05:04:56</endTime>
+              <reason>DRM INFORMATION FAILED
+WVLastErrorKey = ok
+DRM INFO WVPortalKey = aviitbluebox
+DRM INFO WVDRMServerKey = https://www.blueboxinflight.com/widevine/cypherpc/cgi-bin/GetEMMs.cgi
+DRM INFO WVDeviceIDKey = 172.16.0.134
+DRM INFO WVAssetURIKey = widevine://www.blueboxinflight.com/wvvm/Science_of_Stupid_S1_E2_2/Science_of_Stupid_S1_E2_English.wvm</reason>
+            </playEvent>
+          </playEvents>
+        </item>
+      </PlayLog>
+    </PlayLogXml>
+  </PlayLogXml>
+  <PlayLogXml>
+    <PlayLogXml>
+      <PlayLog version="iOS 1.13.431" navigationPath="Movies/Dr Seuss' Horton Hears a Who" platform="iPhone8,1">
+        <item filename="Dr_Seuss_Horton_Hears_a_Who.smil">
+          <playEvents>
+            <playEvent type="Play">
+              <currentlyBufferingBitRate>757344</currentlyBufferingBitRate>
+              <startTime>2016_10_13 16:37:49</startTime>
+              <endTime>2016_10_13 16:37:50</endTime>
+            </playEvent>
+            <playEvent type="Widevine Stopping On Error">
+              <startTime>2016_10_13 16:37:50</startTime>
+              <reason>Mpeg2PsParser error 8</reason>
+            </playEvent>
+            <playEvent type="Play">
+              <currentlyBufferingBitRate>757344</currentlyBufferingBitRate>
+              <startTime>2016_10_13 16:37:50</startTime>
+              <endTime>2016_10_13 16:37:57</endTime>
+            </playEvent>
+            <playEvent type="Seeking">
+              <startTime>2016_10_13 16:37:57</startTime>
+              <endTime>2016_10_13 16:37:57</endTime>
+            </playEvent>
+            <playEvent type="Play">
+              <currentlyBufferingBitRate>757344</currentlyBufferingBitRate>
+              <startTime>2016_10_13 16:38:09</startTime>
+              <endTime>2016_10_13 16:38:10</endTime>
+            </playEvent>
+            <playEvent type="Play">
+              <currentlyBufferingBitRate>1508688</currentlyBufferingBitRate>
+              <startTime>2016_10_13 16:38:10</startTime>
+              <endTime>2016_10_13 16:38:57</endTime>
+            </playEvent>
+            <playEvent type="Entered Background">
+              <startTime>2016_10_13 16:38:57</startTime>
+              <reason>User pressed home or power button</reason>
+            </playEvent>
+            <playEvent type="Returned From Background">
+              <startTime>2016_10_13 16:39:02</startTime>
+            </playEvent>
+            <playEvent type="Play">
+              <currentlyBufferingBitRate>1508688</currentlyBufferingBitRate>
+              <startTime>2016_10_13 16:39:05</startTime>
+              <endTime>2016_10_13 16:40:39</endTime>
+            </playEvent>
+            <playEvent type="Pause">
+              <startTime>2016_10_13 16:40:39</startTime>
+              <reason>User or PA Pause</reason>
+              <endTime>2016_10_13 16:40:44</endTime>
+            </playEvent>
+            <playEvent type="Seeking">
+              <startTime>2016_10_13 16:40:44</startTime>
+              <endTime>2016_10_13 16:40:44</endTime>
+            </playEvent>
+            <playEvent type="Play">
+              <currentlyBufferingBitRate>1508688</currentlyBufferingBitRate>
+              <startTime>2016_10_13 16:40:45</startTime>
+              <endTime>2016_10_13 16:40:45</endTime>
+            </playEvent>
+            <playEvent type="Pause">
+              <startTime>2016_10_13 16:40:45</startTime>
+              <reason>User or PA Pause</reason>
+              <endTime>2016_10_13 16:40:46</endTime>
+            </playEvent>
+            <playEvent type="Play">
+              <currentlyBufferingBitRate>1508688</currentlyBufferingBitRate>
+              <startTime>2016_10_13 16:40:46</startTime>
+              <endTime>2016_10_13 16:41:01</endTime>
+            </playEvent>
+            <playEvent type="Pause">
+              <startTime>2016_10_13 16:41:01</startTime>
+              <reason>Headphones Removed</reason>
+              <endTime>2016_10_13 16:41:09</endTime>
+            </playEvent>
+            <playEvent type="Play">
+              <currentlyBufferingBitRate>1508688</currentlyBufferingBitRate>
+              <startTime>2016_10_13 16:41:09</startTime>
+              <endTime>2016_10_13 16:41:25</endTime>
+            </playEvent>
+            <playEvent type="Entered Background">
+              <startTime>2016_10_13 16:41:25</startTime>
+              <reason>User pressed home or power button</reason>
+            </playEvent>
+            <playEvent type="Returned From Background">
+              <startTime>2016_10_13 17:02:16</startTime>
+            </playEvent>
+            <playEvent type="Ended">
+              <reason>RequestDidTimeout</reason>
+              <startTime>2016_10_13 17:02:16</startTime>
+            </playEvent>
+            <playEvent type="User Retry">
+              <startTime>2016_10_13 17:02:18</startTime>
+            </playEvent>
+            <playEvent type="Ended">
+              <reason>RequestDidTimeout</reason>
+              <startTime>2016_10_13 17:02:19</startTime>
+            </playEvent>
+            <playEvent type="Entered Background">
+              <startTime>2016_10_13 17:02:20</startTime>
+              <reason>User pressed home or power button</reason>
+            </playEvent>
+            <playEvent type="Returned From Background">
+              <startTime>2016_10_13 17:02:42</startTime>
+            </playEvent>
+            <playEvent type="Ended">
+              <reason>User Ended By Cancelling Load</reason>
+              <startTime>2016_10_13 17:02:46</startTime>
+            </playEvent>
+          </playEvents>
+        </item>
+      </PlayLog>
+    </PlayLogXml>
+  </PlayLogXml>
+  <PlayLogXml>
+    <PlayLogXml>
+      <PlayLog version="iOS 1.13.431" navigationPath="TV/Science of Stupid" platform="iPhone8,1">
+        <item filename="Science_of_Stupid_S1_E2.smil">
+          <playEvents>
+            <playEvent type="Play">
+              <currentlyBufferingBitRate>757200</currentlyBufferingBitRate>
+              <startTime>2016_10_13 17:05:00</startTime>
+              <endTime>2016_10_13 17:05:00</endTime>
+            </playEvent>
+            <playEvent type="Play">
+              <currentlyBufferingBitRate>1507200</currentlyBufferingBitRate>
+              <startTime>2016_10_13 17:05:00</startTime>
+              <endTime>2016_10_13 17:05:12</endTime>
+            </playEvent>
+            <playEvent type="Seeking">
+              <startTime>2016_10_13 17:05:12</startTime>
+              <endTime>2016_10_13 17:05:12</endTime>
+            </playEvent>
+            <playEvent type="Play">
+              <currentlyBufferingBitRate>1507200</currentlyBufferingBitRate>
+              <startTime>2016_10_13 17:05:12</startTime>
+              <endTime>2016_10_13 17:05:14</endTime>
+            </playEvent>
+            <playEvent type="Ended">
+              <reason>User Ended</reason>
+              <startTime>2016_10_13 17:05:14</startTime>
+            </playEvent>
+          </playEvents>
+        </item>
+      </PlayLog>
+    </PlayLogXml>
+  </PlayLogXml>
+  <PlayLogXml>
+    <PlayLogXml>
+      <PlayLog version="Android 1.1.238" navigationPath="Movies/Pacific Rim" platform="device osprey_u2, model MotoG3, product osprey_reteu_2gb, brand motorola" DevideId="motorola/osprey_reteu_2gb/osprey_u2:6.0.1/MPI24.107-55/33:user/release-keys" osVersion="23">
+        <item filename="Pacific_Rim.smil">
+          <playEvents>
+            <playEvent type="Ended">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_13 05:05:16</startTime>
+              <endTime>2016_10_13 05:05:16</endTime>
+              <reason>DRM INFORMATION FAILED
+WVLastErrorKey = ok
+DRM INFO WVPortalKey = aviitbluebox
+DRM INFO WVDRMServerKey = https://www.blueboxinflight.com/widevine/cypherpc/cgi-bin/GetEMMs.cgi
+DRM INFO WVDeviceIDKey = 172.16.0.134
+DRM INFO WVAssetURIKey = widevine://www.blueboxinflight.com/wvvm/Pacific_Rim2/Pacific_Rim_English.wvm</reason>
+            </playEvent>
+          </playEvents>
+        </item>
+      </PlayLog>
+    </PlayLogXml>
+  </PlayLogXml>
+  <PlayLogXml>
+    <PlayLogXml>
+      <PlayLog version="Android 1.1.238" navigationPath="Movies/De LEGO film" platform="device osprey_u2, model MotoG3, product osprey_reteu_2gb, brand motorola" DevideId="motorola/osprey_reteu_2gb/osprey_u2:6.0.1/MPI24.107-55/33:user/release-keys" osVersion="23">
+        <item filename="The_Lego_Movie.smil">
+          <playEvents>
+            <playEvent type="Ended">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_13 05:05:35</startTime>
+              <endTime>2016_10_13 05:05:35</endTime>
+              <reason>DRM INFORMATION FAILED
+WVLastErrorKey = ok
+DRM INFO WVPortalKey = aviitbluebox
+DRM INFO WVDRMServerKey = https://www.blueboxinflight.com/widevine/cypherpc/cgi-bin/GetEMMs.cgi
+DRM INFO WVDeviceIDKey = 172.16.0.134
+DRM INFO WVAssetURIKey = widevine://www.blueboxinflight.com/wvvm/The_Lego_Movie2/The_Lego_Movie_Dutch3.wvm</reason>
+            </playEvent>
+          </playEvents>
+        </item>
+      </PlayLog>
+    </PlayLogXml>
+  </PlayLogXml>
+  <PlayLogXml>
+    <PlayLogXml>
+      <PlayLog version="Android 1.1.238" navigationPath="Movies/Date Night" platform="device osprey_u2, model MotoG3, product osprey_reteu_2gb, brand motorola" DevideId="motorola/osprey_reteu_2gb/osprey_u2:6.0.1/MPI24.107-55/33:user/release-keys" osVersion="23">
+        <item filename="DATE_NIGHT.smil">
+          <playEvents>
+            <playEvent type="Ended">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_13 05:05:48</startTime>
+              <endTime>2016_10_13 05:05:48</endTime>
+              <reason>DRM INFORMATION FAILED
+WVLastErrorKey = ok
+DRM INFO WVPortalKey = aviitbluebox
+DRM INFO WVDRMServerKey = https://www.blueboxinflight.com/widevine/cypherpc/cgi-bin/GetEMMs.cgi
+DRM INFO WVDeviceIDKey = 172.16.0.134
+DRM INFO WVAssetURIKey = widevine://www.blueboxinflight.com/wvvm/DATE_NIGHT2/DATE_NIGHT_English.wvm</reason>
+            </playEvent>
+          </playEvents>
+        </item>
+      </PlayLog>
+    </PlayLogXml>
+  </PlayLogXml>
+  <PlayLogXml>
+    <PlayLogXml>
+      <PlayLog version="Android 1.1.238" navigationPath="Movies/Dr Seuss' Horton Hears a Who" platform="device osprey_u2, model MotoG3, product osprey_reteu_2gb, brand motorola" DevideId="motorola/osprey_reteu_2gb/osprey_u2:6.0.1/MPI24.107-55/33:user/release-keys" osVersion="23">
+        <item filename="Dr_Seuss_Horton_Hears_a_Who.smil">
+          <playEvents>
+            <playEvent type="Ended">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_13 05:06:01</startTime>
+              <endTime>2016_10_13 05:06:01</endTime>
+              <reason>DRM INFORMATION FAILED
+WVLastErrorKey = ok
+DRM INFO WVPortalKey = aviitbluebox
+DRM INFO WVDRMServerKey = https://www.blueboxinflight.com/widevine/cypherpc/cgi-bin/GetEMMs.cgi
+DRM INFO WVDeviceIDKey = 172.16.0.134
+DRM INFO WVAssetURIKey = widevine://www.blueboxinflight.com/wvvm/_Dr_Seuss_Horton_Hears_a_Who_Repackaged2/Dr_Seuss_Horton_Hears_a_Who_Dutch.wvm</reason>
+            </playEvent>
+          </playEvents>
+        </item>
+      </PlayLog>
+    </PlayLogXml>
+  </PlayLogXml>
+  <PlayLogXml>
+    <PlayLogXml>
+      <PlayLog version="Android 1.1.238" navigationPath="Movies/The Bucket List" platform="device osprey_u2, model MotoG3, product osprey_reteu_2gb, brand motorola" DevideId="motorola/osprey_reteu_2gb/osprey_u2:6.0.1/MPI24.107-55/33:user/release-keys" osVersion="23">
+        <item filename="The_Bucket_List.smil">
+          <playEvents>
+            <playEvent type="Ended">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_13 05:06:59</startTime>
+              <endTime>2016_10_13 05:06:59</endTime>
+              <reason>DRM INFORMATION FAILED
+WVLastErrorKey = ok
+DRM INFO WVPortalKey = aviitbluebox
+DRM INFO WVDRMServerKey = https://www.blueboxinflight.com/widevine/cypherpc/cgi-bin/GetEMMs.cgi
+DRM INFO WVDeviceIDKey = 172.16.0.134
+DRM INFO WVAssetURIKey = widevine://www.blueboxinflight.com/wvvm/The_Bucket_List2/The_Bucket_List_English.wvm</reason>
+            </playEvent>
+          </playEvents>
+        </item>
+      </PlayLog>
+    </PlayLogXml>
+  </PlayLogXml>
+  <PlayLogXml>
+    <PlayLogXml>
+      <PlayLog version="Android 1.1.200" navigationPath="TV/The Big Bang Theory">
+        <item filename="The_Big_Bang_Theory_S5_E1.smil">
+          <playEvents>
+            <playEvent type="play">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_13 05:16:42</startTime>
+              <endTime>2016_10_13 05:16:47</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="Ended">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_13 05:16:47</startTime>
+              <endTime />
+              <reason>DRM INFORMATION FAILED
+DRM INFO WVPortalKey = aviitbluebox
+DRM INFO WVDRMServerKey = https://www.blueboxinflight.com/widevine/cypherpc/cgi-bin/GetEMMs.cgi
+DRM INFO WVDeviceIDKey = 172.16.0.126
+DRM INFO WVAssetURIKey = widevine://www.blueboxinflight.com/wvvm/The_Big_Bang_Theory_S5_E1_2/The_Big_Bang_Theory_S5_E1_French.wvm</reason>
+            </playEvent>
+          </playEvents>
+        </item>
+      </PlayLog>
+    </PlayLogXml>
+  </PlayLogXml>
+  <PlayLogXml>
+    <PlayLogXml>
+      <PlayLog version="Android 1.1.200" navigationPath="Movies/Date Night">
+        <item filename="DATE_NIGHT.smil">
+          <playEvents>
+            <playEvent type="play">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_13 05:17:03</startTime>
+              <endTime>2016_10_13 05:17:08</endTime>
+              <reason />
+            </playEvent>
+            <playEvent type="Ended">
+              <bitRate>-1</bitRate>
+              <startTime>2016_10_13 05:17:08</startTime>
+              <endTime />
+              <reason>DRM INFORMATION FAILED
+DRM INFO WVPortalKey = aviitbluebox
+DRM INFO WVDRMServerKey = https://www.blueboxinflight.com/widevine/cypherpc/cgi-bin/GetEMMs.cgi
+DRM INFO WVDeviceIDKey = 172.16.0.126
+DRM INFO WVAssetURIKey = widevine://www.blueboxinflight.com/wvvm/DATE_NIGHT2/DATE_NIGHT_English.wvm</reason>
+            </playEvent>
+          </playEvents>
+        </item>
+      </PlayLog>
+    </PlayLogXml>
+  </PlayLogXml>
+  <PlayLogXml>
+    <PlayLogXml>
+      <PlayLog version="iOS 1.13.431" navigationPath="TV/The Big Bang Theory" platform="iPhone8,1">
+        <item filename="The_Big_Bang_Theory_S5_E1.smil">
+          <playEvents>
+            <playEvent type="Play">
+              <currentlyBufferingBitRate>757120</currentlyBufferingBitRate>
+              <startTime>2016_10_13 17:23:35</startTime>
+              <endTime>2016_10_13 17:23:36</endTime>
+            </playEvent>
+            <playEvent type="Play">
+              <currentlyBufferingBitRate>1507696</currentlyBufferingBitRate>
+              <startTime>2016_10_13 17:23:36</startTime>
+              <endTime>2016_10_13 17:23:39</endTime>
+            </playEvent>
+            <playEvent type="Ended">
+              <reason>User Ended</reason>
+              <startTime>2016_10_13 17:23:39</startTime>
+            </playEvent>
+          </playEvents>
+        </item>
+      </PlayLog>
+    </PlayLogXml>
+  </PlayLogXml>
+  <PlayLogXml>
+    <PlayLogXml>
+      <PlayLog version="iOS 1.13.431" navigationPath="TV/The Big Bang Theory" platform="iPhone8,1">
+        <item filename="The_Big_Bang_Theory_S5_E1.smil">
+          <playEvents>
+            <playEvent type="Play">
+              <currentlyBufferingBitRate>757120</currentlyBufferingBitRate>
+              <startTime>2016_10_13 17:29:28</startTime>
+              <endTime>2016_10_13 17:29:28</endTime>
+            </playEvent>
+            <playEvent type="Play">
+              <currentlyBufferingBitRate>1507696</currentlyBufferingBitRate>
+              <startTime>2016_10_13 17:29:28</startTime>
+              <endTime>2016_10_13 17:29:31</endTime>
+            </playEvent>
+            <playEvent type="Seeking">
+              <startTime>2016_10_13 17:29:31</startTime>
+              <endTime>2016_10_13 17:29:31</endTime>
+            </playEvent>
+            <playEvent type="Play">
+              <currentlyBufferingBitRate>1507696</currentlyBufferingBitRate>
+              <startTime>2016_10_13 17:29:34</startTime>
+              <endTime>2016_10_13 17:29:37</endTime>
+            </playEvent>
+            <playEvent type="Ended">
+              <reason>User Ended</reason>
+              <startTime>2016_10_13 17:29:37</startTime>
+            </playEvent>
+          </playEvents>
+        </item>
+      </PlayLog>
+    </PlayLogXml>
+  </PlayLogXml>
+  <PlayLogXml>
+    <PlayLogXml>
+      <PlayLog version="iOS 1.13.431" navigationPath="" platform="iPhone7,2">
+        <item filename="Bluebox_Hybrid_Schematic_2014.mp4">
+          <playEvents>
+            <playEvent type="Pause">
+              <startTime>2016_10_13 15:22:59</startTime>
+              <reason>Headphones Removed</reason>
+              <endTime>2016_10_13 15:23:05</endTime>
+            </playEvent>
+            <playEvent type="Ended">
+              <reason>User Ended By Cancelling Headphone Warning</reason>
+              <startTime>2016_10_13 15:23:05</startTime>
+            </playEvent>
+          </playEvents>
+        </item>
+      </PlayLog>
+    </PlayLogXml>
+  </PlayLogXml>
+  <PlayLogXml>
+    <PlayLogXml>
+      <PlayLog version="iOS 1.13.431" navigationPath="TV/Time Scanners" platform="iPhone7,1">
+        <item filename="Time_Scanners_E5.smil">
+          <playEvents>
+            <playEvent type="Pause">
+              <startTime>2016_10_13 17:59:17</startTime>
+              <reason>Headphones Removed</reason>
+              <endTime>2016_10_13 17:59:21</endTime>
+            </playEvent>
+            <playEvent type="Ended">
+              <reason>User Ended By Cancelling Headphone Warning</reason>
+              <startTime>2016_10_13 17:59:21</startTime>
+            </playEvent>
+          </playEvents>
+        </item>
+      </PlayLog>
+    </PlayLogXml>
+  </PlayLogXml>
+</ArrayOfPlayLogXml>

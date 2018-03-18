@@ -15,3 +15,6 @@ C:\Users\Shaun\Downloads\xmlparser-master\Xml_Parser_Redux\Xml_Parser_Redux\bin\
 C:\Users\Shaun\Downloads\xmlparser-master\Xml_Parser_Redux\Xml_Parser_Redux\bin\Debug\Xml_Parser_Redux.pdb
 C:\Users\Shaun\Downloads\xmlparser-master\Xml_Parser_Redux\Xml_Parser_Redux\obj\Debug\Xml_Parser_Redux.csprojResolveAssemblyReference.cache
 C:\Users\sfalconer\Documents\Visual Studio 2015\Projects\Xml_Parser_Redux\Xml_Parser_Redux\bin\Debug\FlightLog2.xml
+C:\Users\sfalconer\documents\visual studio 2015\Projects\Xml_Parser_Redux\Xml_Parser_Redux\bin\Debug\FlightLog3.xml
+C:\Users\sfalconer\documents\visual studio 2015\Projects\Xml_Parser_Redux\Xml_Parser_Redux\bin\Debug\FlightLog4.xml
+C:\Users\sfalconer\documents\visual studio 2015\Projects\Xml_Parser_Redux\Xml_Parser_Redux\bin\Debug\NewLog.xml
